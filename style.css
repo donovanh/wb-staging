@@ -199,6 +199,74 @@ li {
     width: 980px; }
 
 /* Components */
+.c-about-header {
+  height: 100vh;
+  min-height: 63rem;
+  max-height: 80rem;
+  background: url(./images/backgrounds/about-header.jpg) no-repeat top center;
+  background-position: bottom right;
+  background-size: cover;
+  position: relative;
+  overflow: hidden; }
+
+.c-about-section-1 {
+  background: url(./images/about/section-1-bg.png) bottom center no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  min-height: 50rem;
+  padding-bottom: 2rem;
+  z-index: 100; }
+  .c-about-section-1-diamond {
+    background: url(./images/about/diamond.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    height: 546px;
+    position: absolute;
+    top: -43rem;
+    text-align: center;
+    width: 473px;
+    z-index: 100; }
+    .c-about-section-1-diamond h2 {
+      padding-top: 8rem; }
+    .c-about-section-1-diamond p {
+      margin: 0 auto 4.5rem;
+      max-width: 350px;
+      font-size: 28px; }
+    .c-about-section-1-diamond hr {
+      border-color: #fff;
+      margin-bottom: 1rem; }
+    .c-about-section-1-diamond .btn {
+      line-height: 52px;
+      height: 52px;
+      width: 218px; }
+  .c-about-section-1-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 6rem; }
+    .image-right .c-about-section-1-content-image {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .c-about-section-1-content-image {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 50%; }
+      .c-about-section-1-content-image img {
+        display: block;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto; }
+    .c-about-section-1-content-text h2 {
+      margin-bottom: .5em; }
+    .c-about-section-1-content-text p {
+      max-width: 370px; }
+    .c-about-section-1-content-text.pad-left {
+      padding-left: 3.5rem; }
+    .c-about-section-1-content-text.pad-right {
+      padding-right: 4rem; }
+
 .btn {
   background-position: top;
   background-size: 100% 300%;
@@ -306,24 +374,74 @@ li {
 
 .c-careers-header {
   height: 100vh;
-  min-height: 50rem;
-  background: url(/images/backgrounds/careers-header.jpg) no-repeat top center;
-  background-position: center 92px;
+  min-height: 63rem;
+  max-height: 80rem;
+  background: url(./images/backgrounds/careers-header.jpg) no-repeat top center;
+  background-position: bottom right;
   background-size: cover;
   position: relative;
   overflow: hidden; }
-  .c-careers-header:after {
-    content: "";
+
+.c-careers-section-1 {
+  background: url(./images/careers/section-1-bg.png) bottom center no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  padding-bottom: 2rem;
+  z-index: 100; }
+  .c-careers-section-1-diamond {
+    background: url(./images/careers/diamond.png) no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    height: 546px;
     position: absolute;
-    left: -100vw;
-    width: 200vw;
-    bottom: -1000rem;
-    height: 1000rem;
-    -webkit-transform-origin: 100% 0;
-            transform-origin: 100% 0;
-    -webkit-transform: rotateZ(12deg);
-            transform: rotateZ(12deg);
-    background: #fff; }
+    top: -43rem;
+    text-align: center;
+    width: 473px;
+    z-index: 100; }
+    .c-careers-section-1-diamond h2 {
+      padding-top: 7rem; }
+    .c-careers-section-1-diamond p {
+      margin: 0 auto 1.5rem;
+      max-width: 250px; }
+    .c-careers-section-1-diamond hr {
+      border-color: #fff; }
+    .c-careers-section-1-diamond .btn {
+      line-height: 52px;
+      height: 52px;
+      width: 218px; }
+  .c-careers-section-1-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 6rem; }
+    .image-right .c-careers-section-1-content-image {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .c-careers-section-1-content-image {
+      max-width: 560px;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 50%; }
+      .c-careers-section-1-content-image img {
+        max-width: 560px;
+        width: 100%; }
+    .c-careers-section-1-content-text h2 {
+      margin-bottom: .5em; }
+    .c-careers-section-1-content-text.pad-left {
+      padding-left: 3.5rem; }
+    .c-careers-section-1-content-text.pad-right {
+      padding-right: 4rem; }
+
+.c-careers-embed-wrapper {
+  background: #eee;
+  width: 100%;
+  min-height: 1166px;
+  margin-bottom: 14rem; }
+
+.c-careers.c-end-page {
+  background-size: 100% 96%; }
 
 .c-end-page {
   background: url(./images/backgrounds/end-page-bg.svg) no-repeat;
@@ -1113,22 +1231,22 @@ li {
   -webkit-box-shadow: -25px 0 0 -10px rgba(172, 136, 179, 0.5);
           box-shadow: -25px 0 0 -10px rgba(172, 136, 179, 0.5); }
 
-.c-mouse-down.home-page {
-  height: 63px;
-  opacity: 1;
-  -webkit-transition: all .5s ease-out;
-  transition: all .5s ease-out;
-  position: absolute;
-  bottom: 2rem;
-  left: calc(50% - 15.5px);
-  width: 31px; }
-
-.c-mouse-down-arrow {
-  -webkit-animation: mouse-down-arrow 3s infinite ease-out;
-          animation: mouse-down-arrow 3s infinite ease-out; }
-
-.c-mouse-down.is-hidden {
-  opacity: 0; }
+.c-mouse-down {
+  margin-top: 3rem; }
+  .c-mouse-down.home-page {
+    height: 63px;
+    opacity: 1;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    position: absolute;
+    bottom: 2rem;
+    left: calc(50% - 15.5px);
+    width: 31px; }
+  .c-mouse-down-arrow {
+    -webkit-animation: mouse-down-arrow 3s infinite ease-out;
+            animation: mouse-down-arrow 3s infinite ease-out; }
+  .c-mouse-down.is-hidden {
+    opacity: 0; }
 
 @-webkit-keyframes mouse-down-arrow {
   0%,
@@ -1429,6 +1547,40 @@ li {
       font-size: 30px !important; }
     p {
       font-size: 16px !important; }
+    .c-about-header {
+      min-height: 0;
+      height: 40rem; }
+      .c-about-section-1-diamond {
+        position: relative;
+        top: auto;
+        margin-top: -20rem;
+        margin-bottom: 4rem;
+        height: 330px;
+        width: 286px;
+        margin-left: auto;
+        margin-right: auto; }
+        .c-about-section-1-diamond h2 {
+          padding-top: 4rem; }
+        .c-about-section-1-diamond p {
+          font-size: 22px !important;
+          margin-bottom: .75rem; }
+    .c-careers-header {
+      min-height: 0;
+      height: 40rem; }
+      .c-careers-section-1-diamond {
+        position: relative;
+        top: auto;
+        margin-top: -20rem;
+        margin-bottom: 4rem;
+        height: 330px;
+        width: 286px;
+        margin-left: auto;
+        margin-right: auto; }
+        .c-careers-section-1-diamond h2 {
+          padding-top: 4rem; }
+        .c-careers-section-1-diamond p {
+          font-size: 22px !important;
+          margin-bottom: .75rem; }
     .c-end-page {
       background: url(./images/backgrounds/end-page-bg-mobile.png) no-repeat;
       background-size: 100% 60%;
@@ -1562,9 +1714,13 @@ li {
           height: 51px;
           width: 247px;
           margin: 1.5rem auto .5rem; }
+      .c-top-nav-white {
+        height: 71px; }
     .c-top-nav {
       padding-bottom: 16px;
       border-bottom: 1px solid rgba(193, 201, 212, 0.18); }
+      .c-top-nav-logo {
+        padding-top: 10px; }
         .c-top-nav-logo a {
           height: 39px;
           width: 165px; }
@@ -1586,6 +1742,40 @@ li {
       .c-home-section-3-right {
         padding-left: 40px; } }
       @media (max-width: 839px) {
+    .c-about-section-1 {
+      background-size: 100% auto;
+      background-position: 0 73%; }
+      .c-about-section-1-content {
+        display: block;
+        margin: 0 0 4rem; }
+        .c-about-section-1-content-image {
+          margin: 0 auto;
+          width: 100%; }
+      .c-about-section-1-content-text {
+        margin: 2rem auto;
+        max-width: 560px; }
+        .c-about-section-1-content-text.pad-left {
+          padding-left: 0; }
+        .c-about-section-1-content-text.pad-right {
+          padding-right: 0; }
+    .c-careers-section-1 {
+      background-size: 100% auto;
+      background-position: 0 73%; }
+      .c-careers-section-1-content {
+        display: block;
+        margin: 0 0 4rem; }
+        .c-careers-section-1-content-image {
+          margin: 0 auto;
+          width: 100%; }
+      .c-careers-section-1-content-text {
+        margin: 2rem auto;
+        max-width: 560px; }
+        .c-careers-section-1-content-text.pad-left {
+          padding-left: 0; }
+        .c-careers-section-1-content-text.pad-right {
+          padding-right: 0; }
+    .c-careers-embed-wrapper {
+      margin-bottom: 4rem; }
       .c-home-section-2-wrapper {
         display: block;
         min-height: 0;
