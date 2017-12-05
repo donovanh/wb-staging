@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WonderBill</title>
+
+  <!-- Sofia font from Fonts.com -->
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/8007bbd8-b9d5-4d55-a003-a6eee79db20f.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/images/favicon.png">
+</head>
+
+<body class="l-main-page styleguide js-loading">
+
+  <script>
+    document.body.classList.add('js-loading');
+
+    window.addEventListener("load", showPage);
+
+    function showPage() {
+      document.body.classList.remove('js-loading');
+    }
+  </script>
+
+<style>
+  .styleguide-heading {
+    font-family: Helvetica, Arial;
+    font-size: 16px;
+    line-height: 20px;
+    background: #2f8;
+    display: inline-block;
+    padding: .5em 1em;
+    position: absolute;
+      left: 0;
+    opacity: .5;
+    z-index: 20;
+  }
+
+  .component {
+    margin: 0;
+  }
+</style>
+    
+    <div class="component">
+      <h1 class="styleguide-heading">Top Navigation</h1>
+      <div class="">
+  <div class="c-top-nav-container">
+    <nav class="c-top-nav">
+      <div class="c-top-nav-logo">
+        <a href="/"></a>
+      </div>
+      <ul class="c-top-nav-links hide-tablet hide-mobile">
+        <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li>
+        <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
+        <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
+      </ul>
+      <div class="c-top-nav-burger show-tablet show-mobile" id="js-show-menu"></div>
+    </nav>
+  </div>
+</div>
+    </div>
+
+
+<div class="l-main-page-container">
+
+    <div class="component">
+      <h1 class="styleguide-heading">Text</h1>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h2 class="larger">Heading 2 Larger</h2>
+      <h2 class="smaller">Heading 2 Smaller</h2>
+      <h3>Heading 3</h3>
+      <h3 class="orange">Heading 3 orange style</h3>
+      <p>Paragraph text. Text <a href="#">with a link</a> as well.</p>
+      <p class="larger">Larger paragraph text. Text <a href="#">with a link</a> as well.</p>
+      <p class="smaller">Smaller paragraph text. Text <a href="#">with a link</a> as well.</p>
+      <ul>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+      </ul>
+    </div>
+
+    <div class="component">
+      <h1 class="styleguide-heading">Buttons</h1>
+      <p>
+        <a class="btn btn-green btn-inline">Sign up</a>
+        <a class="btn btn-blue btn-inline">Button text</a>
+        <a class="btn btn-purple btn-inline">Button text</a>
+        <a class="btn btn-orange btn-inline">Button text</a>
+        <a class="btn btn-turqoise btn-inline">Button text</a>
+      </p>
+      <p>
+        <a class="btn btn-outline-green btn-inline">Sign up</a>
+        <a class="btn btn-outline-blue btn-inline">Button text</a>
+        <a class="btn btn-outline-purple btn-inline">Button text</a>
+        <a class="btn btn-outline-orange btn-inline">Button text</a>
+        <a class="btn btn-outline-turqoise btn-inline">Button text</a>
+      </p>
+      <p class="btn btn-green"><a href="#">Block level button</a></p>
+    </div>
+
+</div>
+
+<div class="component">
+  <h1 class="styleguide-heading">Footer</h1>
+  <footer class="c-footer">
+  <div class="c-footer-image"></div>
+  <div class="c-footer-social">
+    <a href="#" class="c-footer-social-link c-footer-social-link-facebook"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-twitter"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-instagram"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-linkedin"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-medium"></a>
+  </div>
+  <div class="c-footer-line"></div>
+  <nav class="c-footer-links hide-mobile">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Security</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </nav>
+  <nav class="c-footer-links show-mobile">
+    <ul>
+      <div class="left column">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">FAQs</a></li>
+      </div>
+      <div class="right column">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </div>
+    </ul>
+  </nav>
+  <div class="c-footer-line show-mobile"></div>
+  <div class="c-footer-text">
+    <p>40 Bank St, Canary Wharf, London, E14 5NR</p>
+    <p>Copyright WonderBill © 2017</p>
+  </div>
+</footer>
+</div>
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.4.0/rellax.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+
+</html>

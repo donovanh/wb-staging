@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1035px" viewBox="0 0 1440 1035" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="19.0619009%" y1="55.7215061%" x2="51.5438637%" y2="55.7215035%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FBF6FB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-" transform="translate(0.000000, -898.000000)" fill="url(#linearGradient-1)">
+            <g id="Car---3" transform="translate(-171.000000, 898.000000)">
+                <g id="Mock-Up">
+                    <polygon id="Path-2" points="1611 0.710021973 0 375.906905 0 680.21505 1611 1034.57996"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

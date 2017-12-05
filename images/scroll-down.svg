@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="65px" viewBox="0 0 31 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Mouse icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.253509964">
+        <g id="Home-" transform="translate(-704.000000, -791.000000)">
+            <g id="Mouse-icon" transform="translate(704.000000, 791.000000)">
+                <rect id="Rectangle-3" stroke="#0D2D57" stroke-width="2" x="1" y="1" width="29" height="44" rx="14.5"></rect>
+                <rect id="Rectangle-4" fill="#0D2D57" x="14" y="10" width="3" height="6" rx="1.5"></rect>
+                <polyline id="Path-3" stroke="#0D2D57" stroke-width="2" points="8 55 15.5268584 63 23 55"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
