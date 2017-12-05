@@ -16,17 +16,42 @@
   <link rel="icon" href="./images/favicon.png">
 </head>
 
-<body class="l-main-page styleguide js-loading">
-
-  <script>
+<script>
+  function preLoadImages(imageURLs) {
     document.body.classList.add('js-loading');
-
-    window.addEventListener("load", showPage);
-
-    function showPage() {
-      document.body.classList.remove('js-loading');
+    var allLoaded = false;
+    var imgCount = 0;
+    var images = [];
+    const onImageLoad = function() { imgCount += 1; }
+    const loadImage = function(url) {
+      images.push(new Image());
+      images[images.length-1].src = url
+      images[images.length-1].onload = onImageLoad;
     }
-  </script>
+    const waitForLoaded = function() {
+      if (imgCount === images.length) {
+        document.body.classList.remove('js-loading'); 
+        document.body.classList.add('js-loaded'); 
+      } else {
+        console.log(`Loading ${imgCount} of ${images.length}`);
+        setTimeout(waitForLoaded,100)
+      }
+    }
+    imageURLs.forEach(loadImage);
+    setTimeout(waitForLoaded,100);
+  }
+</script>
+
+<body class="l-main-page styleguide">
+  
+
+<script>
+ var imageURLs = [
+  './images/backgrounds/about-header.jpg',
+  './images/about/diamond.png'
+ ];
+ preLoadImages(imageURLs);
+</script>
 
 <div class="c-top-nav-mobile show-tablet show-mobile">
   <div class="container">
@@ -125,23 +150,123 @@
     </div>
 
     <div class="c-about-section-2-journey">
+      <div class="c-about-section-2-journey-image"></div>
       <div class="c-about-section-2-journey-text">
         <h4>Our Journey</h4>
         <p class="quote">“We started in late 2015 as a collaboration between Shell Technology Ventures and BCG Digital Ventures to create an easy to use platform for managing your monthly bills and finding better deals. Since then we’ve released our app on Android and iOS, thousands of users have joined us and we’re only just getting started.”</p>
         <p class="author">Shane Clifford</p>
       </div>
-      <div class="c-about-section-2-journey-image">
-        <img src="./images/about/shane.jpg" alt="Shane Clifford">
-      </div>
     </div>
 
   </div>
 </section>
+
+<section class="c-about-section-3">
+  <div class="c-about-section-3-top-content">
+    <h2>Meet our team</h2>
+    <hr>
+  </div>
+
+  <div class="c-about-section-3-team c-media-block-container">
+    <div class="c-media-block colour-blue">
+      <div class="c-media-block-image">
+        <img src="./images/team/shane.jpg" alt="Shane Clifford">
+      </div>
+      <div class="c-media-block-details">
+        <p class="name">Shane Clifford</p>
+        <p class="job-title">CEO</p>
+        <div class="c-media-block-details-links">
+          <a href="#"><img src="./images/icons/icon_linkedin.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="c-media-block colour-orange">
+      <div class="c-media-block-image">
+        <img src="./images/team/claire.jpg" alt="Claire Martin">
+      </div>
+      <div class="c-media-block-details">
+        <p class="name">Claire Martin</p>
+        <p class="job-title">CFO/COO</p>
+        <div class="c-media-block-details-links">
+          <a href="#"><img src="./images/icons/icon_linkedin.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="c-media-block colour-green">
+      <div class="c-media-block-image">
+        <img src="./images/team/james.jpg" alt="James Hamlin">
+      </div>
+      <div class="c-media-block-details">
+        <p class="name">James Hamlin</p>
+        <p class="job-title">CMO</p>
+        <div class="c-media-block-details-links">
+          <a href="#"><img src="./images/icons/icon_linkedin.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="c-media-block colour-purple">
+      <div class="c-media-block-image">
+        <img src="./images/team/tyson.jpg" alt="Tyson Roche">
+      </div>
+      <div class="c-media-block-details">
+        <p class="name">Tyson Roche</p>
+        <p class="job-title">Head of Information Security</p>
+        <div class="c-media-block-details-links">
+          <a href="#"><img src="./images/icons/icon_linkedin.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="c-media-block colour-turqoise">
+      <div class="c-media-block-image">
+        <img src="./images/team/thomas.jpg" alt="Thomas Coggins">
+      </div>
+      <div class="c-media-block-details">
+        <p class="name">Thomas Coggins</p>
+        <p class="job-title">Head of Customer Service</p>
+        <div class="c-media-block-details-links">
+          <a href="#"><img src="./images/icons/icon_linkedin.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="c-media-block colour-pink">
+      <div class="c-media-block-image">
+        <img src="./images/team/dragan.jpg" alt="Dr Dragan Milic">
+      </div>
+      <div class="c-media-block-details">
+        <p class="name">Dr Dragan Milic</p>
+        <p class="job-title">Lead Engineer</p>
+        <div class="c-media-block-details-links">
+          <a href="#"><img src="./images/icons/icon_linkedin.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
  
 
-<section class="c-careers c-end-page">
+<section class="c-about c-end-page">
+  <div class="l-main-page-container">
+    <div class="c-about-section-4">
+      <div class="c-about-section-4-text">
+        <div class="c-about-section-4-text-top">
+          <h2>The future</h2>
+          <p>Our priorities are making sure our service keeps improving and revolutionising your approach to your finances.</p>
+          <p>We love hearing from you about how you’re using WonderBill and what you’d like to see next. It’s great to know what you’d like to see from us, so if you’ve got thoughts or ideas please get in touch at<br>
+            <a href="mailto:support@wonderbill.com">support@wonderbill.com</a></p>
+        </div>
 
-  End page content
+        <div class="c-about-section-4-text-bottom">
+          <h2>Jobs</h2>
+          <p>If you like what you’re reading and you think you’d like to work with us, why not check out our jobs page?</p>
+          <p><a href="#" class="btn btn-purple">Current job roles</a></p>
+        </div>
+
+      </div>
+      <div class="c-about-section-4-image">
+        <img src="./images/about/providers.png">
+      </div>
+    </div>
+  </div>
 
   <section class="js-apply-bubbles" style="position: relative;">
     <div class="js-bubble-holder"></div>

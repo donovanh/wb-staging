@@ -16,17 +16,42 @@
   <link rel="icon" href="./images/favicon.png">
 </head>
 
-<body class="l-main-page styleguide js-loading">
-
-  <script>
+<script>
+  function preLoadImages(imageURLs) {
     document.body.classList.add('js-loading');
-
-    window.addEventListener("load", showPage);
-
-    function showPage() {
-      document.body.classList.remove('js-loading');
+    var allLoaded = false;
+    var imgCount = 0;
+    var images = [];
+    const onImageLoad = function() { imgCount += 1; }
+    const loadImage = function(url) {
+      images.push(new Image());
+      images[images.length-1].src = url
+      images[images.length-1].onload = onImageLoad;
     }
-  </script>
+    const waitForLoaded = function() {
+      if (imgCount === images.length) {
+        document.body.classList.remove('js-loading'); 
+        document.body.classList.add('js-loaded'); 
+      } else {
+        console.log(`Loading ${imgCount} of ${images.length}`);
+        setTimeout(waitForLoaded,100)
+      }
+    }
+    imageURLs.forEach(loadImage);
+    setTimeout(waitForLoaded,100);
+  }
+</script>
+
+<body class="l-main-page styleguide">
+  
+
+<script>
+ var imageURLs = [
+  './images/backgrounds/careers-header.jpg',
+  './images/careers/diamond.png'
+ ];
+ preLoadImages(imageURLs);
+</script>
 
 <div class="c-top-nav-mobile show-tablet show-mobile">
   <div class="container">
@@ -115,7 +140,7 @@
     </div>
     <div class="c-careers-section-1-content image-right">
       <div class="c-careers-section-1-content-image">
-        <img src="./images/careers/careers-image-2.jpg" class="c-image-shadow c-image-shadow-orange">
+        <img src="./images/careers/careers-image-2.jpg">
       </div>
       <div class="c-careers-section-1-content-text pad-right">
         <h2>What we offer</h2>

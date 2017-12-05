@@ -16,17 +16,46 @@
   <link rel="icon" href="./images/favicon.png">
 </head>
 
-<body class="l-main-page styleguide js-loading">
-
-  <script>
+<script>
+  function preLoadImages(imageURLs) {
     document.body.classList.add('js-loading');
-
-    window.addEventListener("load", showPage);
-
-    function showPage() {
-      document.body.classList.remove('js-loading');
+    var allLoaded = false;
+    var imgCount = 0;
+    var images = [];
+    const onImageLoad = function() { imgCount += 1; }
+    const loadImage = function(url) {
+      images.push(new Image());
+      images[images.length-1].src = url
+      images[images.length-1].onload = onImageLoad;
     }
-  </script>
+    const waitForLoaded = function() {
+      if (imgCount === images.length) {
+        document.body.classList.remove('js-loading'); 
+        document.body.classList.add('js-loaded'); 
+      } else {
+        console.log(`Loading ${imgCount} of ${images.length}`);
+        setTimeout(waitForLoaded,100)
+      }
+    }
+    imageURLs.forEach(loadImage);
+    setTimeout(waitForLoaded,100);
+  }
+</script>
+
+<body class="l-main-page styleguide">
+  
+
+<script>
+ var imageURLs = [
+  './images/home/hero-icon-1.png',
+  './images/home/hero-icon-2.png',
+  './images/home/hero-icon-3.png',
+  './images/home/hero-icon-4.png',
+  './images/home/hero-icon-5.png',
+  './images/home/hero-phone.png'
+ ];
+ preLoadImages(imageURLs);
+</script>
 
 <div class="c-top-nav-mobile show-tablet show-mobile">
   <div class="container">

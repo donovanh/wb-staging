@@ -135,7 +135,7 @@ h1 {
   margin-bottom: .5em; }
 
 h2 {
-  font-family: "Sofia W01 Semi Bold", Helvetica, Arial, sans-serif;
+  font-family: "Sofia W01 Medium1446831", Helvetica, Arial, sans-serif;
   font-size: 48px;
   line-height: calc($fontsize-heading-2 * 1.5);
   margin-bottom: .75em; }
@@ -177,7 +177,7 @@ strong {
   text-align: center; }
 
 a {
-  color: #0D2D57;
+  color: #0BB2F3;
   font-weight: 700;
   text-decoration: none; }
 
@@ -204,7 +204,7 @@ li {
   min-height: 63rem;
   max-height: 80rem;
   background: url(./images/backgrounds/about-header.jpg) no-repeat top center;
-  background-position: bottom right;
+  background-position: bottom center;
   background-size: cover;
   position: relative;
   overflow: hidden; }
@@ -261,11 +261,102 @@ li {
     .c-about-section-1-content-text h2 {
       margin-bottom: .5em; }
     .c-about-section-1-content-text p {
-      max-width: 370px; }
+      max-width: 420px;
+      font-size: 22px; }
     .c-about-section-1-content-text.pad-left {
       padding-left: 3.5rem; }
     .c-about-section-1-content-text.pad-right {
       padding-right: 4rem; }
+
+.c-about-section-2 {
+  display: block;
+  position: relative;
+  margin-top: -10rem;
+  margin-bottom: -10rem;
+  z-index: 200; }
+  .c-about-section-2-top-content {
+    text-align: center; }
+    .c-about-section-2-top-content hr {
+      border-color: #AE81B6; }
+    .c-about-section-2-top-content p {
+      font-size: 20px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 3rem; }
+  .c-about-section-2-journey {
+    border: 12px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .c-about-section-2-journey h4 {
+      background: url(./images/icons/icon_book.png) no-repeat left top;
+      background-size: 24px;
+      color: #AD7FB6;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 1px;
+      padding-left: 34px;
+      text-transform: uppercase;
+      font-size: 14px; }
+    .c-about-section-2-journey-text {
+      color: #fff;
+      background: #0D2D57;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      width: 50%;
+      padding: 1.75rem 2rem 0 2rem; }
+      .c-about-section-2-journey-text .quote {
+        font-size: 17px;
+        font-family: "Sofia W01 Medium1446831";
+        margin-bottom: 1em; }
+      .c-about-section-2-journey-text .author {
+        color: #AD7FB6;
+        font-size: 16px;
+        font-style: italic; }
+    .c-about-section-2-journey-image {
+      background: url(./images/about/shane.jpg);
+      background-size: cover;
+      background-position: center;
+      width: 50%;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+
+.c-about-section-3 {
+  padding-top: 20rem;
+  background: url(./images/backgrounds/about-3.png);
+  background-size: cover; }
+  .c-about-section-3-top-content {
+    text-align: center; }
+    .c-about-section-3-top-content hr {
+      border-color: #AE81B6; }
+
+.c-about-section-4 {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .c-about-section-4-text {
+    width: 50%;
+    margin-right: -2rem;
+    max-width: 500px; }
+    .c-about-section-4-text-top {
+      margin-bottom: 10rem; }
+  .c-about-section-4-image {
+    position: relative;
+    width: 100%; }
+    .c-about-section-4-image img {
+      position: absolute;
+      top: 0;
+      width: 847px; }
+
+.c-about.c-end-page {
+  background-size: 100% 94%; }
 
 .btn {
   background-position: top;
@@ -377,7 +468,7 @@ li {
   min-height: 63rem;
   max-height: 80rem;
   background: url(./images/backgrounds/careers-header.jpg) no-repeat top center;
-  background-position: bottom right;
+  background-position: bottom center;
   background-size: cover;
   position: relative;
   overflow: hidden; }
@@ -1231,6 +1322,72 @@ li {
   -webkit-box-shadow: -25px 0 0 -10px rgba(172, 136, 179, 0.5);
           box-shadow: -25px 0 0 -10px rgba(172, 136, 179, 0.5); }
 
+.c-image-shadow-orange {
+  -webkit-box-shadow: -25px 0 0 -10px rgba(241, 186, 154, 0.5);
+          box-shadow: -25px 0 0 -10px rgba(241, 186, 154, 0.5); }
+
+/* Currently only used on About for the team blocks */
+.c-media {
+  margin: 2rem auto; }
+  .c-media-block-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 90%;
+    width: 1002px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .c-media-block {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin: .75em; }
+    .c-media-block .name {
+      font-family: "Sofia W01 Regular1446825";
+      font-size: 20px;
+      margin-bottom: 1rem; }
+    .c-media-block .job-title {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    .c-media-block.colour-blue .job-title {
+      color: #3B9FDC; }
+    .c-media-block.colour-orange .job-title {
+      color: #FB9D2B; }
+    .c-media-block.colour-green .job-title {
+      color: #19BB5F; }
+    .c-media-block.colour-purple .job-title {
+      color: #AE81B6; }
+    .c-media-block.colour-turqoise .job-title {
+      color: #24AAA7; }
+    .c-media-block.colour-pink .job-title {
+      color: #F67280; }
+    .c-media-block-image img {
+      border-bottom: 4px solid; }
+    .colour-blue .c-media-block-image img {
+      border-color: #3B9FDC; }
+    .colour-orange .c-media-block-image img {
+      border-color: #FB9D2B; }
+    .colour-green .c-media-block-image img {
+      border-color: #19BB5F; }
+    .colour-purple .c-media-block-image img {
+      border-color: #AE81B6; }
+    .colour-turqoise .c-media-block-image img {
+      border-color: #24AAA7; }
+    .colour-pink .c-media-block-image img {
+      border-color: #F67280; }
+    .c-media-block-details {
+      position: relative; }
+      .c-media-block-details-links {
+        position: absolute;
+        right: 0;
+        top: 5px; }
+        .c-media-block-details-links img {
+          height: 16px;
+          width: 15px; }
+
 .c-mouse-down {
   margin-top: 3rem; }
   .c-mouse-down.home-page {
@@ -1406,7 +1563,7 @@ li {
     transition: opacity 0.2s ease-out, transform 0.4s cubic-bezier(0, 1, 0.3, 1.1), -webkit-transform 0.4s cubic-bezier(0, 1, 0.3, 1.1);
     -webkit-transform: translateY(-3rem);
             transform: translateY(-3rem);
-    z-index: 100; }
+    z-index: 900; }
     .c-top-nav-mobile.is-visible {
       opacity: 1;
       pointer-events: all;
@@ -1564,6 +1721,35 @@ li {
         .c-about-section-1-diamond p {
           font-size: 22px !important;
           margin-bottom: .75rem; }
+    .c-about-section-2 {
+      margin-top: 0; }
+      .c-about-section-2-journey {
+        display: block; }
+        .c-about-section-2-journey h4 {
+          display: inline-block; }
+        .c-about-section-2-journey-text {
+          padding: 1.5rem 1rem .5rem 1rem;
+          text-align: center;
+          width: 100%; }
+        .c-about-section-2-journey-image {
+          height: 285px;
+          width: 100%; }
+    .c-about-section-3 {
+      padding-top: 14rem; }
+    .c-about-section-4 {
+      display: block;
+      padding: 4rem 0; }
+      .c-about-section-4-text {
+        margin: 0;
+        text-align: center;
+        width: 100%; }
+        .c-about-section-4-text-top {
+          margin-bottom: 2rem; }
+        .c-about-section-4-image img {
+          position: relative;
+          margin: 0 auto;
+          width: 140%;
+          margin-left: -20%; }
     .c-careers-header {
       min-height: 0;
       height: 40rem; }
@@ -1693,6 +1879,11 @@ li {
     .c-image-shadow-purple {
       -webkit-box-shadow: 0 25px 0 -10px rgba(172, 136, 179, 0.5);
               box-shadow: 0 25px 0 -10px rgba(172, 136, 179, 0.5); }
+    .c-image-shadow-orange {
+      -webkit-box-shadow: 0 25px 0 -10px rgba(241, 186, 154, 0.5);
+              box-shadow: 0 25px 0 -10px rgba(241, 186, 154, 0.5); }
+        .c-media-block-image img {
+          width: 290px; }
       .c-newsletter-heading {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1715,10 +1906,9 @@ li {
           width: 247px;
           margin: 1.5rem auto .5rem; }
       .c-top-nav-white {
-        height: 71px; }
-    .c-top-nav {
-      padding-bottom: 16px;
-      border-bottom: 1px solid rgba(193, 201, 212, 0.18); }
+        height: 71px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(193, 201, 212, 0.18); }
       .c-top-nav-logo {
         padding-top: 10px; }
         .c-top-nav-logo a {
@@ -1883,4 +2073,6 @@ li {
           height: 250px;
           width: 240px;
           top: 32px;
-          left: calc(50% - 125px); } }
+          left: calc(50% - 125px); }
+      .c-media-block-container {
+        width: 100%; } }
