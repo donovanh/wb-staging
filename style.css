@@ -326,7 +326,7 @@ li {
     background: #fff; }
 
 .c-end-page {
-  background: url(/images/backgrounds/end-page-bg.svg) no-repeat;
+  background: url(./images/backgrounds/end-page-bg.svg) no-repeat;
   background-size: 100% 80%;
   margin-top: -10rem;
   padding-top: 10rem;
@@ -334,14 +334,14 @@ li {
 
 .c-footer {
   background: #0D2D57;
-  background: #0D2D57 url(/images/footerbg.png) no-repeat top;
+  background: #0D2D57 url(./images/footerbg.png) no-repeat top;
   background-size: 100% 6px;
   color: #fff;
   margin-top: 2rem;
   min-height: 20rem;
   position: relative; }
   .c-footer-image {
-    background: url(/images/footer-image.png) no-repeat center;
+    background: url(./images/footer-image.png) no-repeat center;
     background-size: cover;
     height: 86px;
     position: absolute;
@@ -365,20 +365,20 @@ li {
       width: 34px;
       margin: 1rem; }
       .c-footer-social-link-facebook {
-        background: url(/images/icons/social_facebook.png) no-repeat center;
+        background: url(./images/icons/social_facebook.png) no-repeat center;
         background-size: 15px 32px; }
       .c-footer-social-link-twitter {
-        background: url(/images/icons/social_twitter.png) no-repeat center;
+        background: url(./images/icons/social_twitter.png) no-repeat center;
         background-size: 34px 29px; }
       .c-footer-social-link-instagram {
-        background: url(/images/icons/social_instagram.png) no-repeat center;
+        background: url(./images/icons/social_instagram.png) no-repeat center;
         background-size: 29px 30px; }
       .c-footer-social-link-linkedin {
-        background: url(/images/icons/social_linkedin.png) no-repeat center;
+        background: url(./images/icons/social_linkedin.png) no-repeat center;
         background-size: 31px 33px;
         margin-top: 12px; }
       .c-footer-social-link-medium {
-        background: url(/images/icons/social_medium.png) no-repeat center;
+        background: url(./images/icons/social_medium.png) no-repeat center;
         background-size: 32px 27px; }
   .c-footer-line {
     background-color: rgba(193, 201, 212, 0.18);
@@ -429,7 +429,7 @@ li {
       margin: .5rem 0 0; }
 
 .c-home-hero {
-  background: url(/images/backgrounds/home-1.svg) no-repeat;
+  background: url(./images/backgrounds/home-1.svg) no-repeat;
   background-position: bottom right;
   background-size: auto 100%;
   min-height: 100vh;
@@ -455,7 +455,7 @@ li {
     .c-home-hero-right-phone {
       -webkit-animation: show-phone 2s 0.5s cubic-bezier(0, 1, 0.3, 1) forwards;
               animation: show-phone 2s 0.5s cubic-bezier(0, 1, 0.3, 1) forwards;
-      background: url(/images/home/hero-phone.png) no-repeat;
+      background: url(./images/home/hero-phone.png) no-repeat;
       background-size: cover;
       height: 549px;
       width: 326px;
@@ -487,7 +487,7 @@ li {
         -webkit-transform: rotate(38deg);
                 transform: rotate(38deg); }
       .c-home-hero-right-icons .one .image {
-        background: url(/images/home/hero-icon-1.png) no-repeat center;
+        background: url(./images/home/hero-icon-1.png) no-repeat center;
         background-size: 19px 27px;
         position: relative;
         height: 64px;
@@ -508,7 +508,7 @@ li {
         -webkit-transform: rotate(-41deg);
                 transform: rotate(-41deg); }
       .c-home-hero-right-icons .two .image {
-        background: url(/images/home/hero-icon-2.png) no-repeat center;
+        background: url(./images/home/hero-icon-2.png) no-repeat center;
         background-size: 13px 15px;
         position: relative;
         height: 45px;
@@ -529,7 +529,7 @@ li {
         -webkit-transform: rotate(58deg);
                 transform: rotate(58deg); }
       .c-home-hero-right-icons .three .image {
-        background: url(/images/home/hero-icon-3.png) no-repeat center;
+        background: url(./images/home/hero-icon-3.png) no-repeat center;
         background-size: 49px 30px;
         position: relative;
         height: 80px;
@@ -550,7 +550,7 @@ li {
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg); }
       .c-home-hero-right-icons .four .image {
-        background: url(/images/home/hero-icon-4.png) no-repeat center;
+        background: url(./images/home/hero-icon-4.png) no-repeat center;
         background-size: 34px 11px;
         position: relative;
         height: 50px;
@@ -571,7 +571,7 @@ li {
         -webkit-transform: rotate(48deg);
                 transform: rotate(48deg); }
       .c-home-hero-right-icons .five .image {
-        background: url(/images/home/hero-icon-5.png) no-repeat center;
+        background: url(./images/home/hero-icon-5.png) no-repeat center;
         background-size: 23px 30px;
         position: relative;
         height: 75px;
@@ -592,7 +592,7 @@ li {
         -webkit-transform: rotate(56deg);
                 transform: rotate(56deg); }
       .c-home-hero-right-icons .six .image {
-        background: url(/images/home/hero-icon-6.png) no-repeat center;
+        background: url(./images/home/hero-icon-6.png) no-repeat center;
         background-size: 31px 21px;
         position: relative;
         height: 75px;
@@ -611,10 +611,10 @@ li {
             align-items: center;
     min-height: 860px; }
   .c-home-section-2-one {
-    background-image: url(/images/home/home-2-bg-one.png);
+    background-image: url(./images/home/home-2-bg-one.png);
     background-position: right; }
   .c-home-section-2-two {
-    background-image: url(/images/home/home-2-bg-two.png);
+    background-image: url(./images/home/home-2-bg-two.png);
     background-position: left; }
     .c-home-section-2-two .c-home-section-2-image {
       -webkit-box-ordinal-group: 2;
@@ -625,10 +625,10 @@ li {
           -ms-flex-order: 2;
               order: 2; }
   .c-home-section-2-three {
-    background-image: url(/images/home/home-2-bg-three.png);
+    background-image: url(./images/home/home-2-bg-three.png);
     background-position: right; }
   .c-home-section-2-four {
-    background-image: url(/images/home/home-2-bg-four.png);
+    background-image: url(./images/home/home-2-bg-four.png);
     background-position: left; }
     .c-home-section-2-four .c-home-section-2-image {
       -webkit-box-ordinal-group: 2;
@@ -651,49 +651,49 @@ li {
       position: absolute;
       background-size: cover; }
     .c-home-section-2-image.one .disc {
-      background-image: url(/images/home/home-2-disc-one.png);
+      background-image: url(./images/home/home-2-disc-one.png);
       top: -20px;
       left: 40px;
       height: 292px;
       width: 260px; }
     .c-home-section-2-image.one .phone {
-      background-image: url(/images/home/home-2-phone-one.png);
+      background-image: url(./images/home/home-2-phone-one.png);
       top: -326px;
       left: 178px;
       height: 652px;
       width: 355px; }
     .c-home-section-2-image.two .disc {
-      background-image: url(/images/home/home-2-disc-two.png);
+      background-image: url(./images/home/home-2-disc-two.png);
       top: -20px;
       right: 60px;
       height: 287px;
       width: 257px; }
     .c-home-section-2-image.two .phone {
-      background-image: url(/images/home/home-2-phone-two.png);
+      background-image: url(./images/home/home-2-phone-two.png);
       top: -326px;
       right: 178px;
       height: 652px;
       width: 355px; }
     .c-home-section-2-image.three .disc {
-      background-image: url(/images/home/home-2-disc-three.png);
+      background-image: url(./images/home/home-2-disc-three.png);
       top: -20px;
       left: 52px;
       height: 287px;
       width: 257px; }
     .c-home-section-2-image.three .phone {
-      background-image: url(/images/home/home-2-phone-three.png);
+      background-image: url(./images/home/home-2-phone-three.png);
       top: -326px;
       left: 178px;
       height: 652px;
       width: 355px; }
     .c-home-section-2-image.four .disc {
-      background-image: url(/images/home/home-2-disc-four.png);
+      background-image: url(./images/home/home-2-disc-four.png);
       top: -20px;
       right: 0;
       height: 299px;
       width: 321px; }
     .c-home-section-2-image.four .phone {
-      background-image: url(/images/home/home-2-phone-four.png);
+      background-image: url(./images/home/home-2-phone-four.png);
       top: -326px;
       right: 178px;
       height: 652px;
@@ -719,7 +719,7 @@ li {
       width: 397px; }
 
 .c-home-mid-page-bg {
-  background: url(/images/backgrounds/home-4.svg) no-repeat;
+  background: url(./images/backgrounds/home-4.svg) no-repeat;
   background-size: 100% 70%;
   margin-top: -20rem; }
 
@@ -751,7 +751,7 @@ li {
         width: 50px; }
         .c-home-section-4-feedback-item .icon:after {
           content: "";
-          background: url(/images/home/quote-mark.png) no-repeat center;
+          background: url(./images/home/quote-mark.png) no-repeat center;
           background-size: 19px 16px;
           position: absolute;
           top: 0;
@@ -805,13 +805,13 @@ li {
       height: 114px;
       width: 116px; }
       .c-home-section-5-block-icon.one {
-        background-image: url(/images/home/section-5-icon-1.png);
+        background-image: url(./images/home/section-5-icon-1.png);
         background-size: 48px 51px; }
       .c-home-section-5-block-icon.two {
-        background-image: url(/images/home/section-5-icon-2.png);
+        background-image: url(./images/home/section-5-icon-2.png);
         background-size: 35px 56px; }
       .c-home-section-5-block-icon.three {
-        background-image: url(/images/home/section-5-icon-3.png);
+        background-image: url(./images/home/section-5-icon-3.png);
         background-size: 59px 55px; }
     .c-home-section-5-block p {
       max-width: 300px;
@@ -859,25 +859,25 @@ li {
         border-color: #C5A6CB;
         background-color: #AE81B6; }
         .c-home-section-6-block-icon.one:after {
-          background-image: url(/images/home/section-6-icon-1.png);
+          background-image: url(./images/home/section-6-icon-1.png);
           background-size: 38px 38px; }
       .c-home-section-6-block-icon.two {
         border-color: #F1A5AA;
         background-color: #F67280; }
         .c-home-section-6-block-icon.two:after {
-          background-image: url(/images/home/section-6-icon-2.png);
+          background-image: url(./images/home/section-6-icon-2.png);
           background-size: 37px 37px; }
       .c-home-section-6-block-icon.three {
         border-color: #F5BE71;
         background-color: #FB9D2B; }
         .c-home-section-6-block-icon.three:after {
-          background-image: url(/images/home/section-6-icon-3.png);
+          background-image: url(./images/home/section-6-icon-3.png);
           background-size: 40px 40px; }
       .c-home-section-6-block-icon.four {
         border-color: #0BB2F3;
         background-color: #3B9FDC; }
         .c-home-section-6-block-icon.four:after {
-          background-image: url(/images/home/section-6-icon-4.png);
+          background-image: url(./images/home/section-6-icon-4.png);
           background-size: 40px 40px; }
 
 @-webkit-keyframes show-phone {
@@ -949,13 +949,13 @@ li {
     bottom: 0;
     left: 0; }
     .c-home-carousel-bg.one {
-      background-image: url(/images/backgrounds/home-2-1.svg); }
+      background-image: url(./images/backgrounds/home-2-1.svg); }
     .c-home-carousel-bg.two {
-      background-image: url(/images/backgrounds/home-2-2.svg); }
+      background-image: url(./images/backgrounds/home-2-2.svg); }
     .c-home-carousel-bg.three {
-      background-image: url(/images/backgrounds/home-2-3.svg); }
+      background-image: url(./images/backgrounds/home-2-3.svg); }
     .c-home-carousel-bg.four {
-      background-image: url(/images/backgrounds/home-2-4.svg); }
+      background-image: url(./images/backgrounds/home-2-4.svg); }
     .c-home-carousel-bg.current {
       opacity: 1; }
   .c-home-carousel-left {
@@ -1031,10 +1031,10 @@ li {
       -webkit-box-shadow: 0 0 53px 0 rgba(210, 219, 231, 0.6);
               box-shadow: 0 0 53px 0 rgba(210, 219, 231, 0.6); }
       .c-home-carousel-pip.control.left {
-        background: #fff url(/images/icons/icon_chevron_left.png) no-repeat center;
+        background: #fff url(./images/icons/icon_chevron_left.png) no-repeat center;
         background-size: 13px 21px; }
       .c-home-carousel-pip.control.right {
-        background: #fff url(/images/icons/icon_chevron_right.png) no-repeat center;
+        background: #fff url(./images/icons/icon_chevron_right.png) no-repeat center;
         background-size: 13px 21px; }
     .c-home-carousel-pip.number {
       border: 1px solid #C1C9D4;
@@ -1092,19 +1092,19 @@ li {
         transition: opacity 0.4s ease-out, transform 0.8s cubic-bezier(0, 1, 0.3, 1);
         transition: opacity 0.4s ease-out, transform 0.8s cubic-bezier(0, 1, 0.3, 1), -webkit-transform 0.8s cubic-bezier(0, 1, 0.3, 1); }
       .c-home-carousel-right-image.one {
-        background-image: url(/images/home/card-1.png); }
+        background-image: url(./images/home/card-1.png); }
       .c-home-carousel-right-image.two {
-        background-image: url(/images/home/card-2.png);
+        background-image: url(./images/home/card-2.png);
         width: 498px;
         top: calc(50% - 324px);
         left: calc(50% + 24px); }
       .c-home-carousel-right-image.three {
-        background-image: url(/images/home/card-3.png);
+        background-image: url(./images/home/card-3.png);
         width: 505px;
         top: calc(50% - 324px);
         left: calc(50% + 16px); }
       .c-home-carousel-right-image.four {
-        background-image: url(/images/home/card-4.png);
+        background-image: url(./images/home/card-4.png);
         width: 545px;
         top: calc(50% - 324px);
         left: calc(50% - 23px); }
@@ -1229,7 +1229,7 @@ li {
   .c-top-nav-logo {
     padding-top: 14px; }
     .c-top-nav-logo a {
-      background: url(/images/logo@2x.png) no-repeat;
+      background: url(./images/logo@2x.png) no-repeat;
       background-size: cover;
       display: block;
       height: 66px;
@@ -1263,7 +1263,7 @@ li {
       height: 48px;
       line-height: 48px; }
   .c-top-nav-burger {
-    background: url(/images/icons/icon_burger.png);
+    background: url(./images/icons/icon_burger.png);
     background-size: cover;
     cursor: pointer;
     height: 23px;
@@ -1308,7 +1308,7 @@ li {
               justify-content: space-between;
       height: 100%; }
     .c-top-nav-mobile-logo {
-      background: url(/images/mobile-logo@2x.png);
+      background: url(./images/mobile-logo@2x.png);
       background-size: cover;
       position: absolute;
       top: .75rem;
@@ -1318,7 +1318,7 @@ li {
     .c-top-nav-mobile ul {
       margin: 0; }
     .c-top-nav-mobile-close {
-      background: url(/images/icons/icon_close.png);
+      background: url(./images/icons/icon_close.png);
       background-size: cover;
       cursor: pointer;
       position: absolute;
@@ -1383,20 +1383,20 @@ li {
         transition: all .4s ease-out;
         margin: 1rem; }
         .c-top-nav-mobile-social-link-facebook {
-          background: url(/images/icons/social_facebook.png) no-repeat center;
+          background: url(./images/icons/social_facebook.png) no-repeat center;
           background-size: 15px 32px; }
         .c-top-nav-mobile-social-link-twitter {
-          background: url(/images/icons/social_twitter.png) no-repeat center;
+          background: url(./images/icons/social_twitter.png) no-repeat center;
           background-size: 34px 29px; }
         .c-top-nav-mobile-social-link-instagram {
-          background: url(/images/icons/social_instagram.png) no-repeat center;
+          background: url(./images/icons/social_instagram.png) no-repeat center;
           background-size: 29px 30px; }
         .c-top-nav-mobile-social-link-linkedin {
-          background: url(/images/icons/social_linkedin.png) no-repeat center;
+          background: url(./images/icons/social_linkedin.png) no-repeat center;
           background-size: 31px 33px;
           margin-top: 12px; }
         .c-top-nav-mobile-social-link-medium {
-          background: url(/images/icons/social_medium.png) no-repeat center;
+          background: url(./images/icons/social_medium.png) no-repeat center;
           background-size: 32px 27px; }
         .c-top-nav-mobile-social-link:hover {
           opacity: 1; }
@@ -1430,11 +1430,11 @@ li {
     p {
       font-size: 16px !important; }
     .c-end-page {
-      background: url(/images/backgrounds/end-page-bg-mobile.png) no-repeat;
+      background: url(./images/backgrounds/end-page-bg-mobile.png) no-repeat;
       background-size: 100% 60%;
       background-position: 0 80%; }
     .c-home-hero {
-      background: url(/images/backgrounds/home-1-mobile.png) no-repeat;
+      background: url(./images/backgrounds/home-1-mobile.png) no-repeat;
       background-position: top right;
       background-size: 100%;
       min-height: 0;
@@ -1461,7 +1461,7 @@ li {
                 transform: none;
         left: auto; }
         .c-home-hero-right-phone {
-          background-image: url(/images/home/hero-phone-mobile.png);
+          background-image: url(./images/home/hero-phone-mobile.png);
           width: 305px;
           margin: 50px auto 0;
           z-index: 100; }
@@ -1492,7 +1492,7 @@ li {
     .c-home-mid-page-bg {
       background: none; }
     .c-home-section-4 {
-      background: url(/images/backgrounds/home-4-mobile.png) no-repeat;
+      background: url(./images/backgrounds/home-4-mobile.png) no-repeat;
       background-size: 50% auto;
       background-position: 0 28rem;
       min-height: 0;
@@ -1640,13 +1640,13 @@ li {
         background-size: 100% 80%;
         background-position: top; }
         .c-home-carousel-bg.one {
-          background-image: url(/images/backgrounds/home-2-1-mobile.png); }
+          background-image: url(./images/backgrounds/home-2-1-mobile.png); }
         .c-home-carousel-bg.two {
-          background-image: url(/images/backgrounds/home-2-2-mobile.png); }
+          background-image: url(./images/backgrounds/home-2-2-mobile.png); }
         .c-home-carousel-bg.three {
-          background-image: url(/images/backgrounds/home-2-3-mobile.png); }
+          background-image: url(./images/backgrounds/home-2-3-mobile.png); }
         .c-home-carousel-bg.four {
-          background-image: url(/images/backgrounds/home-2-4-mobile.png); }
+          background-image: url(./images/backgrounds/home-2-4-mobile.png); }
       .c-home-carousel-left {
         padding-right: 0;
         position: relative;
