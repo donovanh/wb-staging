@@ -262,7 +262,7 @@ li {
 .c-bubble {
   -webkit-animation: bubble-animation 8s linear forwards;
           animation: bubble-animation 8s linear forwards;
-  background: url(/images/diamond.svg);
+  background: url(./images/diamond.svg);
   background-size: cover;
   height: 120px;
   position: absolute;
