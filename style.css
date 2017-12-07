@@ -546,17 +546,18 @@ li {
     padding: 0;
     position: relative;
     -webkit-transition: background .5s ease-out;
-    transition: background .5s ease-out; }
+    transition: background .5s ease-out;
+    /* Colours! */ }
     .c-careers-jobs-job.is-active {
       background-color: #FAFBFC;
       border-top: 4px solid #F3F3F3; }
       .c-careers-jobs-job.is-active .job-description,
       .c-careers-jobs-job.is-active .job-details {
         opacity: 1;
-        padding: 2rem 4rem 2rem 1rem;
+        padding: 2rem 4rem 2rem 2rem;
         height: auto; }
       .c-careers-jobs-job.is-active .job-description {
-        padding: 1rem 4rem 1rem 1rem; }
+        padding: 1rem 4rem 1rem 2rem; }
       .c-careers-jobs-job.is-active .toggle {
         background-image: url(./images/icons/icon_minus.png);
         background-size: 19px 3px; }
@@ -572,10 +573,11 @@ li {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      padding: 1rem 4rem 1rem 1rem; }
+      padding: 1rem 4rem 1rem 2rem; }
       .c-careers-jobs-job .job-title h4 {
         font-size: 12px;
         text-transform: uppercase;
+        font-weight: 700;
         letter-spacing: 1px;
         margin-bottom: .25rem; }
       .c-careers-jobs-job .job-title h3 {
@@ -592,7 +594,7 @@ li {
               flex-direction: column;
       font-size: 16px;
       border-top: 2px solid #F3F3F3;
-      padding: 0 4rem 0 1rem;
+      padding: 0 4rem 0 2rem;
       height: 0;
       opacity: 0;
       overflow: hidden;
@@ -608,7 +610,7 @@ li {
           -ms-flex-align: center;
               align-items: center;
       border-top: 2px solid #F3F3F3;
-      padding: 0 4rem 0 1rem;
+      padding: 0 4rem 0 2rem;
       height: 0;
       opacity: 0;
       overflow: hidden;
@@ -618,7 +620,7 @@ li {
         margin-right: 1rem; }
       .c-careers-jobs-job .job-details p {
         font-size: 16px;
-        margin: 0 0; }
+        margin: 0 0 .5rem; }
     .c-careers-jobs-job .toggle {
       background: url(./images/icons/icon_plus.png) no-repeat center;
       background-size: 16px;
@@ -627,6 +629,30 @@ li {
       right: 1.5rem;
       height: 20px;
       width: 20px; }
+    .c-careers-jobs-job.engineering a, .c-careers-jobs-job.engineering .category {
+      color: #AE81B6; }
+    .c-careers-jobs-job.engineering .toggle {
+      background-image: url(./images/icons/icon_plus_purple.png); }
+    .c-careers-jobs-job.engineering.is-active .toggle {
+      background-image: url(./images/icons/icon_minus_purple.png); }
+    .c-careers-jobs-job.product a, .c-careers-jobs-job.product .category {
+      color: #3B9FDC; }
+    .c-careers-jobs-job.product .toggle {
+      background-image: url(./images/icons/icon_plus_blue.png); }
+    .c-careers-jobs-job.product.is-active .toggle {
+      background-image: url(./images/icons/icon_minus_blue.png); }
+    .c-careers-jobs-job.marketing a, .c-careers-jobs-job.marketing .category, .c-careers-jobs-job.infosec a, .c-careers-jobs-job.infosec .category {
+      color: #FB9D2B; }
+    .c-careers-jobs-job.marketing .toggle, .c-careers-jobs-job.infosec .toggle {
+      background-image: url(./images/icons/icon_plus_orange.png); }
+    .c-careers-jobs-job.marketing.is-active .toggle, .c-careers-jobs-job.infosec.is-active .toggle {
+      background-image: url(./images/icons/icon_minus_orange.png); }
+    .c-careers-jobs-job.finance a, .c-careers-jobs-job.finance .category, .c-careers-jobs-job.interim a, .c-careers-jobs-job.interim .category {
+      color: #D76F76; }
+    .c-careers-jobs-job.finance .toggle, .c-careers-jobs-job.interim .toggle {
+      background-image: url(./images/icons/icon_plus_red.png); }
+    .c-careers-jobs-job.finance.is-active .toggle, .c-careers-jobs-job.interim.is-active .toggle {
+      background-image: url(./images/icons/icon_minus_red.png); }
 
 .c-careers.c-end-page {
   background-size: 100% 96%; }
@@ -2175,6 +2201,16 @@ li {
         .c-careers-section-1-diamond p {
           font-size: 22px !important;
           margin-bottom: .75rem; }
+        .c-careers-jobs-job .job-details {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: left;
+              -ms-flex-align: left;
+                  align-items: left; }
+          .c-careers-jobs-job .job-details p {
+            margin-bottom: .5rem; }
     .c-end-page {
       background: url(./images/backgrounds/end-page-bg-mobile.png) no-repeat;
       background-size: 100% 60%;
