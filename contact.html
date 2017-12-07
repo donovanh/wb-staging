@@ -1,1 +1,214 @@
-Contact Page
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WonderBill</title>
+
+  <!-- Sofia font from Fonts.com -->
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/8007bbd8-b9d5-4d55-a003-a6eee79db20f.css"/>
+  <link href="//fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/favicon.png">
+</head>
+
+<script>
+  function preLoadImages(imageURLs) {
+    document.body.classList.add('js-loading');
+    var allLoaded = false;
+    var imgCount = 0;
+    var images = [];
+    const onImageLoad = function() { imgCount += 1; }
+    const loadImage = function(url) {
+      images.push(new Image());
+      images[images.length-1].src = url
+      images[images.length-1].onload = onImageLoad;
+    }
+    const waitForLoaded = function() {
+      if (imgCount === images.length) {
+        document.body.classList.remove('js-loading'); 
+        document.body.classList.add('js-loaded'); 
+      } else {
+        setTimeout(waitForLoaded,100)
+      }
+    }
+    imageURLs.forEach(loadImage);
+    setTimeout(waitForLoaded,100);
+  }
+</script>
+
+<body class="l-main-page">
+  
+
+<script>
+ var imageURLs = [
+  ''
+ ];
+ //preLoadImages(imageURLs);
+</script>
+
+<div class="c-top-nav-mobile show-tablet show-mobile">
+  <div class="container">
+    <div class="c-top-nav-mobile-top">
+      <div class="c-top-nav-mobile-logo">
+        <a href="/"></a>
+      </div>
+      <div class="c-top-nav-mobile-close" id="js-hide-menu"></div>
+    </div>
+    <div class="c-top-nav-mobile-middle">
+      <ul>
+        <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li>
+        <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
+        <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
+      </ul>
+    </div>
+    <div class="c-top-nav-mobile-bottom">
+      <div class="c-top-nav-mobile-social">
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-facebook"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-twitter"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-instagram"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-linkedin"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-medium"></a>
+      </div>
+      <div class="c-top-nav-mobile-line"></div>
+      <div class="c-top-nav-mobile-text">
+        <p>40 Bank St, Canary Wharf, London, E14 5NR</p>
+        <p>Copyright WonderBill © 2017</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="c-contact-header c-blue-header">
+  <div class="c-top-nav-white">
+  <div class="c-top-nav-container">
+    <nav class="c-top-nav">
+      <div class="c-top-nav-logo">
+        <a href="/"></a>
+      </div>
+      <ul class="c-top-nav-links hide-tablet hide-mobile">
+        <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li>
+        <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
+        <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
+      </ul>
+      <div class="c-top-nav-burger show-tablet show-mobile" id="js-show-menu"></div>
+    </nav>
+  </div>
+</div>
+</section>
+
+<section class="c-contact-top">
+  <div class="l-main-page-container">
+    <div class="c-contact-top-title" data-aos="slide-down" data-aos-duration="800">
+      <h2>Contact</h2>
+    </div>
+  </div>
+</section>
+
+<section class="c-contact-content">
+  <div class="l-main-page-container">
+    <div class="c-contact-content-form">
+      <h3>Get in touch</h3>
+      <form class="c-contact-form" action="#" method="post">
+        <input class="c-contact-form-text-input" type="text" name="first-name" placeholder="First Name">
+        <input class="c-contact-form-text-input" type="text" name="last-name" placeholder="Last Name">
+        <input class="c-contact-form-text-input" type="email" name="email" placeholder="Email Address">
+        <textarea name="c-contact-form-textarea" placeholder="How can we help?"></textarea> 
+        <input class="c-contact-form-submit btn btn-outline-green" type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="c-contact-content-side">
+      <h4 class="email">Email</h4>
+      <p>
+        General: <a href="mailto:info@wonderbill.com">info@wonderbill.com</a><br>
+        Support: <a href="mailto:support@wonderbill.com">support@wonderbill.com</a>
+      </p>
+      <h4 class="location">Location</h4>
+      <p>
+        40 Bank St, Canary Wharf, <br>
+        London, E14 5NR
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="c-contact c-end-page">
+
+  <section class="js-apply-bubbles" style="position: relative;">
+    <div class="js-bubble-holder"></div>
+  <section class="c-newsletter">
+  <div class="l-main-page-container">
+    
+    <h2 class="c-newsletter-heading text-centered">
+      <span class="c-newsletter-heading-icon"><img src="./images/icons/icon_newsletter_heading.png" width="73px"></span>
+      <span class="c-newsletter-heading-text">Subscribe to our newsletter</span>
+    </h2>
+    <p class="text-centered">We’ll be announcing new features and developments regularly so keep in touch</p>
+    <form class="c-newsletter-form" action="#" method="post">
+      <input class="c-newsletter-text-input" type="text" name="first-name" placeholder="First Name">
+      <input class="c-newsletter-text-input" type="text" name="last-name" placeholder="Last Name">
+      <input class="c-newsletter-text-input" type="email" name="email" placeholder="Email Address">
+      <input class="c-newsletter-submit btn btn-outline-green" type="submit" value="Submit">
+    </form>
+  </div>
+</section>
+
+
+  <footer class="c-footer">
+  <div class="c-footer-image"></div>
+  <div class="c-footer-social">
+    <a href="#" class="c-footer-social-link c-footer-social-link-facebook"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-twitter"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-instagram"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-linkedin"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-medium"></a>
+  </div>
+  <div class="c-footer-line"></div>
+  <nav class="c-footer-links hide-mobile">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Security</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </nav>
+  <nav class="c-footer-links show-mobile">
+    <ul>
+      <div class="left column">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">FAQs</a></li>
+      </div>
+      <div class="right column">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </div>
+    </ul>
+  </nav>
+  <div class="c-footer-line show-mobile"></div>
+  <div class="c-footer-text">
+    <p>40 Bank St, Canary Wharf, London, E14 5NR</p>
+    <p>Copyright WonderBill © 2017</p>
+  </div>
+</footer>
+
+  </section>
+
+</section>
+
+  <script   src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/rellax/1.4.0/rellax.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>
