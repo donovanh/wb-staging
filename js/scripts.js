@@ -184,15 +184,15 @@ $(function() {
                       '<div class="job-details">' +
                         '<div>' +
                           '<p>Job title <strong>'+ details.jobtitle +'</strong></p>' +
-                          '<p>Location <strong>'+ details.location +'</strong></p>' +
+                          '<p>Location <strong>'+ details.location +', '+ details.city +'</strong></p>' +
                         '</div>' +
                         '<div>' +
                           '<p>Department <strong>'+ details.department +'</strong></p>' +
                           '<p>Experience <strong>'+ details.experience +'</strong></p>' +
                         '</div>' +
                         '<div>' +
-                          '<p>Closing <strong>30 Sep 2017</strong></p>' +
-                          '<p>City <strong>'+ details.city +'</strong></p>' +
+                          //'<p>Closing <strong>30 Sep 2017</strong></p>' +
+                          //'<p>City <strong>'+ details.city +'</strong></p>' +
                         '</div>' +
                       '</div>' +
                       '<div class="toggle"></div>' +
