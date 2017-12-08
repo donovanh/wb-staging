@@ -363,6 +363,13 @@ li {
 .c-about.c-end-page {
   background-size: 100% 94%; }
 
+.c-blue-header {
+  background: #0D2D57;
+  color: #fff;
+  height: 248px; }
+  .c-blue-header-title {
+    padding-top: 2.75rem; }
+
 .btn {
   background-position: top;
   background-size: 100% 300%;
@@ -656,6 +663,105 @@ li {
 
 .c-careers.c-end-page {
   background-size: 100% 96%; }
+
+.c-contact-content {
+  position: relative;
+  margin-bottom: 6rem; }
+  .c-contact-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .c-contact-content-side {
+    background: url(./images/backgrounds/contact-side-bg.svg);
+    background-size: cover;
+    border: 2px solid #F6F6F6;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    height: 230px;
+    margin: 4rem 2rem 2rem;
+    padding: 1.25rem 0 1rem 1rem;
+    width: 280px; }
+    .c-contact-content-side .email {
+      background: url(./images/icons/icon_email_blue.png) no-repeat top left;
+      background-size: 20px;
+      color: #3B9FDC;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 20px;
+      padding: 0 0 0 26px;
+      text-transform: uppercase; }
+    .c-contact-content-side .location {
+      background: url(./images/icons/icon_location_orange.png) no-repeat top left;
+      background-size: 17px 25px;
+      color: #EA5650;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 28px;
+      padding: 0 0 0 25px;
+      text-transform: uppercase; }
+    .c-contact-content-side p, .c-contact-content-side a {
+      color: rgba(13, 45, 87, 0.55);
+      font-size: 15px; }
+
+.c-contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 2rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .c-contact-form-container {
+    width: 70%; }
+  .c-contact-form-header {
+    font-size: 32px;
+    margin-bottom: 1rem; }
+  .c-contact-form input[type=text],
+  .c-contact-form input[type=email],
+  .c-contact-form textarea {
+    border: none;
+    border-bottom: 1px solid #102A58;
+    background: transparent;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    margin: 1rem 0; }
+    .c-contact-form input[type=text].last,
+    .c-contact-form input[type=email].last,
+    .c-contact-form textarea.last {
+      margin-bottom: 2.5rem; }
+  .c-contact-form input[type=submit] {
+    background: transparent;
+    border: 1px solid #00CE64;
+    margin: 2rem 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    width: 227px; }
+  .c-contact-form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(13, 45, 87, 0.55); }
+  .c-contact-form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(13, 45, 87, 0.55); }
+  .c-contact-form :-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(13, 45, 87, 0.55); }
+  .c-contact-form :-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(13, 45, 87, 0.55); }
+
+.c-contact.c-end-page {
+  background-size: cover;
+  min-height: 45rem;
+  margin-top: -16rem;
+  padding-top: 16rem; }
 
 .c-end-page {
   background: url(./images/backgrounds/end-page-bg.svg) no-repeat;
@@ -1942,7 +2048,7 @@ li {
       display: block;
       height: 66px;
       width: 279px;
-      margin-left: 1rem; }
+      margin-left: .5rem; }
   .c-top-nav-links {
     padding: 0;
     margin: 0;
@@ -2184,6 +2290,10 @@ li {
           margin: 0 auto;
           width: 140%;
           margin-left: -20%; }
+    .c-blue-header {
+      height: 153px; }
+      .c-blue-header-title {
+        padding-top: 1.5rem; }
     .c-careers-header {
       min-height: 0;
       height: 40rem; }
@@ -2211,6 +2321,39 @@ li {
                   align-items: left; }
           .c-careers-jobs-job .job-details p {
             margin-bottom: .5rem; }
+    .c-contact-content {
+      margin-bottom: 2rem; }
+      .c-contact-content-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .c-contact-content-side {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        margin: 1rem 0;
+        max-width: 280px;
+        width: 100%; }
+      .c-contact-form-container {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        width: 100%; }
+      .c-contact-form input[type=text],
+      .c-contact-form input[type=email],
+      .c-contact-form textarea {
+        font-size: 16px;
+        max-width: 100%;
+        margin: .5rem 0; }
+    .c-contact-form .g-recaptcha {
+      margin: 0 auto; }
+      .c-contact-form input[type=submit] {
+        height: 51px;
+        width: 247px;
+        margin: 1.5rem auto .5rem; }
+    .c-contact.c-end-page {
+      background-size: 100% 100%; }
     .c-end-page {
       background: url(./images/backgrounds/end-page-bg-mobile.png) no-repeat;
       background-size: 100% 60%;
@@ -2417,7 +2560,8 @@ li {
         padding-top: 10px; }
         .c-top-nav-logo a {
           height: 39px;
-          width: 165px; }
+          width: 165px;
+          margin-left: 5%; }
       .c-top-nav-burger {
         top: 18px;
         right: 18px; } }

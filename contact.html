@@ -61,7 +61,7 @@
     </div>
     <div class="c-top-nav-mobile-middle">
       <ul>
-        <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li>
+        <!-- <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li> -->
         <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
         <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
       </ul>
@@ -91,7 +91,7 @@
         <a href="/"></a>
       </div>
       <ul class="c-top-nav-links hide-tablet hide-mobile">
-        <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li>
+        <!-- <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li> -->
         <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
         <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
       </ul>
@@ -99,11 +99,9 @@
     </nav>
   </div>
 </div>
-</section>
 
-<section class="c-contact-top">
   <div class="l-main-page-container">
-    <div class="c-contact-top-title" data-aos="slide-down" data-aos-duration="800">
+    <div class="c-blue-header-title">
       <h2>Contact</h2>
     </div>
   </div>
@@ -111,27 +109,32 @@
 
 <section class="c-contact-content">
   <div class="l-main-page-container">
-    <div class="c-contact-content-form">
-      <h3>Get in touch</h3>
-      <form class="c-contact-form" action="#" method="post">
-        <input class="c-contact-form-text-input" type="text" name="first-name" placeholder="First Name">
-        <input class="c-contact-form-text-input" type="text" name="last-name" placeholder="Last Name">
-        <input class="c-contact-form-text-input" type="email" name="email" placeholder="Email Address">
-        <textarea name="c-contact-form-textarea" placeholder="How can we help?"></textarea> 
-        <input class="c-contact-form-submit btn btn-outline-green" type="submit" value="Submit">
-      </form>
-    </div>
-    <div class="c-contact-content-side">
-      <h4 class="email">Email</h4>
-      <p>
-        General: <a href="mailto:info@wonderbill.com">info@wonderbill.com</a><br>
-        Support: <a href="mailto:support@wonderbill.com">support@wonderbill.com</a>
-      </p>
-      <h4 class="location">Location</h4>
-      <p>
-        40 Bank St, Canary Wharf, <br>
-        London, E14 5NR
-      </p>
+    <h3 class="c-contact-form-header">Get in touch</h3>
+    <div class="c-contact-content-container">
+      <div class="c-contact-form-container">
+        <script src="//www.google.com/recaptcha/api.js"></script>
+        <form class="c-contact-form" action="#" method="post">
+          <input class="c-contact-form-text-input" type="text" name="first-name" placeholder="First Name">
+          <input class="c-contact-form-text-input" type="text" name="last-name" placeholder="Last Name">
+          <input class="c-contact-form-text-input" type="email" name="email" placeholder="Email Address">
+          <input class="c-contact-form-text-input last" type="text" name="question" placeholder="How can we help?">
+          <!-- <textarea name="c-contact-form-textarea" placeholder="How can we help?"></textarea> --> 
+          <div class="g-recaptcha" data-sitekey="6Ld0NDwUAAAAAMVKcbqbWhsWz4WmqezQ5gG6rdDA"></div>
+          <input class="c-contact-form-submit btn btn-outline-green" type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="c-contact-content-side">
+        <h4 class="email">Email</h4>
+        <p>
+          General: <a href="mailto:info@wonderbill.com">info@wonderbill.com</a><br>
+          Support: <a href="mailto:support@wonderbill.com">support@wonderbill.com</a>
+        </p>
+        <h4 class="location">Location</h4>
+        <p>
+          40 Bank St, Canary Wharf, <br>
+          London, E14 5NR
+        </p>
+      </div>
     </div>
   </div>
 </section>
