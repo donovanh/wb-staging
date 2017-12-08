@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WonderBill</title>
+
+  <!-- Sofia font from Fonts.com -->
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/8007bbd8-b9d5-4d55-a003-a6eee79db20f.css"/>
+  <link href="//fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/favicon.png">
+</head>
+
+<script>
+  function preLoadImages(imageURLs) {
+    document.body.classList.add('js-loading');
+    var allLoaded = false;
+    var imgCount = 0;
+    var images = [];
+    const onImageLoad = function() { imgCount += 1; }
+    const loadImage = function(url) {
+      images.push(new Image());
+      images[images.length-1].src = url
+      images[images.length-1].onload = onImageLoad;
+    }
+    const waitForLoaded = function() {
+      if (imgCount === images.length) {
+        document.body.classList.remove('js-loading'); 
+        document.body.classList.add('js-loaded'); 
+      } else {
+        setTimeout(waitForLoaded,100)
+      }
+    }
+    imageURLs.forEach(loadImage);
+    setTimeout(waitForLoaded,100);
+  }
+</script>
+
+<body class="l-main-page">
+  
+
+<script>
+ var imageURLs = [
+  ''
+ ];
+ //preLoadImages(imageURLs);
+</script>
+
+<div class="c-top-nav-mobile show-tablet show-mobile">
+  <div class="container">
+    <div class="c-top-nav-mobile-top">
+      <div class="c-top-nav-mobile-logo">
+        <a href="/"></a>
+      </div>
+      <div class="c-top-nav-mobile-close" id="js-hide-menu"></div>
+    </div>
+    <div class="c-top-nav-mobile-middle">
+      <ul>
+        <!-- <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li> -->
+        <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
+        <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
+      </ul>
+    </div>
+    <div class="c-top-nav-mobile-bottom">
+      <div class="c-top-nav-mobile-social">
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-facebook"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-twitter"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-instagram"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-linkedin"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-medium"></a>
+      </div>
+      <div class="c-top-nav-mobile-line"></div>
+      <div class="c-top-nav-mobile-text">
+        <p>40 Bank St, Canary Wharf, London, E14 5NR</p>
+        <p>Copyright WonderBill © 2017</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="c-textpage-header c-blue-header c-blue-header-bg-blue">
+  <div class="c-top-nav-white">
+  <div class="c-top-nav-container">
+    <nav class="c-top-nav">
+      <div class="c-top-nav-logo">
+        <a href="/"></a>
+      </div>
+      <ul class="c-top-nav-links hide-tablet hide-mobile">
+        <!-- <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li> -->
+        <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
+        <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
+      </ul>
+      <div class="c-top-nav-burger show-tablet show-mobile" id="js-show-menu"></div>
+    </nav>
+  </div>
+</div>
+
+  <div class="l-main-page-container">
+    <div class="c-blue-header-title">
+      <h2>Terms &amp; Conditions</h2>
+    </div>
+  </div>
+</section>
+
+<section class="c-textpage-content">
+  <div class="l-main-page-container">
+    
+    <h3>WonderBill Terms and Conditions ("Terms")</h3>
+
+    <p>Last updated: 2<sup>nd</sup> August 2017<br>
+
+    Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully
+    before using the www.wonderbill.com website (the &ldquo;Website&rdquo;) and the
+    my.wonderbill.com application (the &ldquo;App&rdquo;) (the App and the Website
+    together, or individually, the "Service"). The Service is operated by WonderBill
+    Limited d/b/a as WonderBill ("WonderBill", "us", "we", or "our"), a company
+    registered in England and Wales. Our company registration number is 10515447 and our
+    registered office is at Shell Centre, Shell Centre, London, England, SE1 7NA.</p>
+
+    <p>These Terms are a legal contract between you and WonderBill ("us" or "our" or "we"
+    or &ldquo;WonderBill&rdquo;) and govern your access to and use of the Service and any
+    the text, data, information, software, graphics, videos, photographs and more (all of
+    which are referred to as &ldquo;Materials&rdquo;) that we and our affiliates may make
+    available to you through Service.</p>
+
+    <p>Your access to and use of the Service is conditioned upon your acceptance of and
+    compliance with these Terms. These Terms apply to all visitors, users and others who
+    wish to access or use the Service.</p>
+
+    <p>READ THESE TERMS CAREFULLY BEFORE ACCESSING OR USING ANY PART OF THE SERVICE.
+    USING THE SERVICE IN ANY WAY INDICATES THAT YOU HAVE BOTH READ AND ACCEPT THESE
+    TERMS. YOU CANNOT USE THIS SERVICE OR ANY PART OF THE SERVICE IF YOU DO NOT ACCEPT
+    THESE TERMS.</p>
+
+    <h3>User restrictions and access</h3>
+
+    <p>You must be 18 years old or older to access or use the Service. Be aware that the
+    use of some of the functionalities of the Service requires access to the
+    internet.</p>
+
+    <p>The features of the Service are more particularly described on Website. In
+    general, the Service simplifies and helps you manage your relationships with third
+    party service providers such as energy, TV, Internet and phone (collectively,
+    &ldquo;Providers&rdquo;). Once signed up, key account, usage and statement
+    information that you upload or otherwise connect to within the Service (the
+    &ldquo;Data&rdquo;) is available centrally through your WonderBill account.</p>
+
+    <p>You can also set up notifications to receive an overview of all of your account
+    activity on a periodic basis, or whenever activity of interest takes place. Based on
+    the Data within your WonderBill account, we may also make recommendations to you,
+    such as to help you run your Provider relationships more efficiently and to provide
+    money saving recommendations.</p>
+
+    <p>We will not charge you for access to the Service. To sign up, you will need to
+    create an account by following the instructions on the Website. Once your account has
+    been created, you can provide your online account details for the specific Providers
+    you use and then view information pertaining to those services within your WonderBill
+    account. The more Providers you add, the more useful the Service will be.</p>
+
+    <h3>Your Account</h3>
+
+    <p>When you create an account with us, you guarantee that you are above the age of
+    18, and that the information you provide us is accurate, complete, and current at all
+    times. Inaccurate, incomplete, or obsolete information may result in the immediate
+    termination of your account on the Service.</p>
+
+    <p>You are responsible for maintaining the confidentiality of your account and
+    password, including but not limited to the restriction of access to your computer
+    and/or account. You agree to accept responsibility for any and all activities or
+    actions that occur under your account and/or password, whether your password is with
+    our Service or a third-party service. You must notify us immediately upon becoming
+    aware of any breach of security or unauthorized use of your account.</p>
+
+    <h3>WonderBill as Your Limited Agent</h3>
+
+    <p>By using the Service, you authorise and appoint WonderBill as your limited agent,
+    solely for the purposes of accessing the Provider accounts you designate and the
+    information contained within them, on your behalf, and, where specifically requested
+    by you, assisting you in changing Providers where available. You appoint WonderBill
+    as your limited agent for the foregoing purposes, with the full power and authority,
+    to access any and all information relating to those designated accounts, through all
+    means including access to third party sites, servers and documents and other means of
+    information retrieval relating to you. For all intents and purposes, WonderBill is
+    acting as you would act in person.</p>
+
+    <p>You agree that when WonderBill accesses and retrieves information from third
+    parties relating to you, WonderBill is acting as on your behalf and not the agent of
+    the third party or any other entity.</p>
+
+    <p>You agree that third parties can rely on the authorisation granted by you to us
+    and that the Service is not endorsed by any third party Providers accessible through
+    the Service. We do not warrant or otherwise guarantee that such third parties permit
+    use of our Service as part of any agreement you have in place with them.</p>
+
+    <h3>Data</h3>
+
+    <p>You license WonderBill to store any usernames, passwords, data and other content
+    relating to you, which are obtained from Providers and or which are contained within
+    your WonderBill account by virtue of your use of the Service. The license provided by
+    you to us is without the payment by us of any fees.</p>
+
+    <p>In general, WonderBill will use the Data in order to: (i) provide the Service to
+    you; and (ii) look at ways in which we can improve the Service; and (iii) analyse
+    overall trends in usage of Providers, in an anonymised and aggregated manner (meaning
+    that you cannot be personally identified), which we may share with third parties. For
+    more information, please review our Privacy Policy, available at <a href="https://my.wonderbill.com/privacy" title="Privacy Policy">my.wonderbill.com/privacy</a> and incorporated by reference into these Terms.</p>
+
+    <h3>Acceptable use</h3>
+
+    <p>You <em>may</em>:</p>
+
+    <ul>
+      <li>(a) access the Service in compliance with the Terms; and</li>
+
+      <li>(b) print off one copy of any or all of the Materials for your own personal
+      non-commercial use</li>
+    </ul>
+
+    <p>(the Permitted Purposes)</p>
+
+    <p>You <em>may not</em>:</p>
+
+    <ul>
+      <li>(a) utilize the Service to review or access any Provider accounts that are not
+      in your name, or otherwise link any Provider accounts to the Service unless such
+      account belongs to you.</li>
+
+      <li>(b) copy (whether by printing off onto paper, storing on disk, downloading or
+      in any other way), distribute (including distributing copies), broadcast, alter or
+      tamper with in any way or otherwise use Materials (including User Generated
+      Content, unless it is your own User Generated Content that you legally post to the
+      Service or associated forum) except as set out above. These restrictions apply in
+      relation to all or part of the Content;</li>
+
+      <li>(c) remove any copyright, trade mark or other intellectual property notices
+      contained in the original material from any material copied or printed off from the
+      Service, or link to the Service without our permission;</li>
+
+      <li>(d) use the Service (or any part of it) in any unlawful manner, for any
+      unlawful purpose, or in any manner inconsistent with these Terms, or act
+      fraudulently or maliciously, for example, by hacking into or inserting malicious
+      codes, including viruses, or harmful data, into the Service or any operating
+      system;</li>
+
+      <li>(e) use the Service in a way which could damage, disable, overburden, impair or
+      compromise WonderBill&rsquo;s systems or security or interfere with other
+      users;</li>
+
+      <li>(f) collect or harvest any information or data from the Service or our systems
+      or attempt to decipher any transmissions to or from the servers running any part of
+      the Service; or</li>
+
+      <li>(g) change or delete any ownership notices from materials downloaded or printed
+      from the Service;</li>
+
+      <li>(h) circumvent or modify any Service security technology or software, without
+      WonderBill&rsquo;s express written consent.</li>
+    </ul>
+
+    <p>If you wish to provide a hypertext or other link to the Service, please email
+    <a href="mailto:support@wonderbill.com" title=
+    "Email Support">support@wonderbill.com</a> with details of:</p>
+
+    <p>(a) the URL(s) of the web page(s) from which you are proposing to link to the
+    Service; and</p>
+
+    <p>(b) the URL(s) of the web pages(s) on the Service to which you are proposing to
+    link</p>
+
+    <p>WonderBill may, at its sole discretion, agree to or reject any request in
+    accordance with the above. WonderBill has no obligation to agree to any such request
+    or to provide any reason for accepting or rejecting any such request.</p>
+
+    <p>In these Terms we are granting you a limited, personal, non-exclusive, revocable
+    and non-transferable license to use and to display the Materials; your right to use
+    the Materials is conditioned on your compliance with these Terms (including the
+    payment of any applicable fees). You have no other rights in this this Service or any
+    part thereof and you may not modify, edit, copy, reproduce, create derivative works
+    of, reverse engineer, alter, enhance or in any way exploit any of Materials or
+    Service in any manner. If you make copies of any part of the Service while engaging
+    in Permitted Purposes then we ask that you be sure to keep on the copies all of our
+    copyright and other proprietary notices as they appear on the Service. You may only
+    use such copies in connection with your use of the Service.</p>
+
+    <p>If you breach any of the provisions in these Terms, your right to use our Service
+    and your right to use any of the Materials posted on our Website or App will cease
+    immediately. You must, at our option, return, delete or destroy any copies of such
+    Materials which you have made.</p>
+
+    <h3>Mobile Services</h3>
+
+    <p>Be aware that the use of some of the functionalities of the Service requires
+    access to the internet and your carrier's normal rates apply. The Service contains
+    services and features that are available to certain mobile or other devices
+    (smartphone, PC, tablet, etc.) having an internet connection and able to download,
+    install and use the Service (each a &ldquo;Device&rdquo;). By using the Service, you
+    agree that we may communicate with you by electronic means to your mobile Device,
+    including via in-App notices and/or push notifications. You further agree that
+    certain information about your use of these services may be shared with us, as set
+    forth in the WonderBill Privacy Policy, and, we may in accordance with applicable law
+    and our Privacy Policy send you certain marketing communications. As set forth in the
+    Privacy Policy, you must share your mobile location data with us, or the App will not
+    function. If you change or deactivate your mobile phone number, you have to
+    immediately update your account information to ensure that we don't send your
+    messages to the person who acquired your old number.</p>
+
+    <p>We make available the App to access the website and Services via a Device. To use
+    the App you must have a Device that is compatible with the mobile service. We do not
+    warrant that the App will be compatible with your Device. We hereby grant to you a
+    non-exclusive, non-transferable, revocable license to use an object code copy of the
+    App for one registered account on one Device owned or leased solely by you, for your
+    personal use. You may not: (i) modify, disassemble, decompile or reverse engineer the
+    App, except to the extent that such restriction is expressly prohibited by law; (ii)
+    rent, lease, loan, resell, sublicense, distribute or otherwise transfer the App to
+    any third-party or use the App to provide time sharing or similar services for any
+    third-party; (iii) make any copies of the App; (iv) remove, circumvent, disable,
+    damage or otherwise interfere with security-related features of the App, features
+    that prevent or restrict use or copying of any content accessible through the App, or
+    features that enforce limitations on use of the App; or (v) delete the copyright and
+    other proprietary rights notices on the App. You acknowledge that we may from time to
+    time issue upgraded versions of the App, and may automatically electronically upgrade
+    the version of the App that you are using on your Device. You consent to such
+    automatic upgrading on your Device, and agree that these Terms will apply to all such
+    upgrades. The foregoing license grant is not a sale of the App or any copy thereof,
+    and we and our third-party licensors or suppliers retain all right, title, and
+    interest in and to the App (and any copy of the App). Standard carrier data charges
+    may apply to your use of the App.</p>
+
+    <p>The following additional terms and conditions apply with respect to any App that
+    we provide to you designed for use on an Apple iOS-powered mobile device (an
+    &ldquo;iOS App&rdquo;):</p>
+
+    <ul>
+      <li>You acknowledge that these Terms are between you and WonderBill only, and not
+      with Apple, Inc. (&ldquo;Apple&rdquo;).</li>
+
+      <li>Your use of our iOS App must comply with Apple&rsquo;s then-current App Store
+      Terms of Service.</li>
+
+      <li>We, and not Apple, are solely responsible for our iOS App and the Services and
+      content available thereon. You acknowledge that Apple has no obligation to provide
+      maintenance and support services with respect to our iOS App. To the maximum extent
+      permitted by applicable law, Apple will have no warranty obligation whatsoever with
+      respect to our iOS App.</li>
+
+      <li>You agree that we, and not Apple, are responsible for addressing any claims by
+      you or any third-party relating to our iOS App or your possession and/or use of our
+      iOS App, including, but not limited to: (i) product liability claims; (ii) any
+      claim that the iOS App fails to conform to any applicable legal or regulatory
+      requirement; and (iii) claims arising under consumer protection or similar
+      legislation, and all such claims are governed solely by these Terms and any law
+      applicable to us as provider of the iOS App.</li>
+
+      <li>You agree that we, and not Apple, are responsible, to the extent required by
+      these Terms, for the investigation, defense, settlement and discharge of any
+      third-party intellectual property infringement claim related to our iOS App or your
+      possession and use of our iOS App.</li>
+
+      <li>You represent and warrant that (i) you are not located in a country that is
+      subject to a U.S. Government embargo, or that has been designated by the U.S.
+      Government as a &ldquo;terrorist supporting&rdquo; country; and (ii) you are not
+      listed on any U.S. Government list of prohibited or restricted parties.</li>
+
+      <li>You agree to comply with all applicable third-party terms of agreement when
+      using our iOS App (e.g., you must not be in violation of your wireless data service
+      terms of agreement when using the iOS App).</li>
+
+      <li>The parties agree that Apple and Apple&rsquo;s subsidiaries are third-party
+      beneficiaries to these Terms as they relate to your license of our iOS App. Upon
+      your acceptance of these Terms, Apple will have the right (and will be deemed to
+      have accepted the right) to enforce these Terms against you as they relate to your
+      license of the iOS App as a third-party beneficiary thereof.</li>
+    </ul>
+
+    <p>The following additional terms and conditions apply with respect to any App that
+    we provide to you designed for use on an Android-powered mobile device (an
+    &ldquo;Android App&rdquo;):</p>
+
+    <ul>
+      <li>You acknowledge that these Terms are between you and WonderBill only, and not
+      with Google, Inc. (&ldquo;Google&rdquo;).</li>
+
+      <li>Your use of our Android App must comply with Google&rsquo;s then-current
+      Android Market Terms of Service.</li>
+
+      <li>Google is only a provider of the Android Market where you obtained the Android
+      App. We, and not Google, are solely responsible for our Android App and the
+      Services and content available thereon. Google has no obligation or liability to
+      you with respect to our Android App or these Terms.</li>
+
+      <li>You acknowledge and agree that Google is a third-party beneficiary to the Terms
+      as they relate to our Android App.</li>
+    </ul>
+
+    <p>The following additional terms and conditions apply with respect to any App that
+    we provide to you designed for use on an Android-powered mobile device and obtained
+    from the Amazon App Store (an &ldquo;Amazon Android App&rdquo;):</p>
+
+    <ul>
+      <li>You acknowledge that these Terms are between you and WonderBill only, and not
+      with Amazon.com, Inc. (&ldquo;Amazon&rdquo;).</li>
+
+      <li>Information that we collect from you or your device is subject to these Terms
+      and the Privacy Policy, and will not be subject to the Amazon.com Privacy
+      Notice.</li>
+
+      <li>Amazon has no obligation or liability to you with respect to our Amazon Android
+      App and the Services and Content available thereon or these Terms. We, and not
+      Amazon, are solely responsible for our Amazon Android App and the Services and
+      content available thereon. For the avoidance of doubt, the Amazon Android App does
+      not include any software that you may need to install on your mobile device in
+      order to download applications from the Amazon App Store (the &ldquo;Appstore
+      Software&rdquo;). The Appstore Software is licensed to you by Amazon pursuant to
+      the terms of the then current Amazon Appstore for Android Terms of Use.</li>
+    </ul>
+
+    <h3>User generated content</h3>
+
+    <p>&ldquo;User Generated Content&rdquo; is any content such as communications,
+    information, messages, photographs, music, videos, designs, graphics, website links,
+    data, profiles that you and/or other Service users post or otherwise make available
+    on or through the Service, except to the extent that such content is owned by or
+    licensed to WonderBill.</p>
+
+    <p>You are solely responsible for your User Generated Content, your interactions with
+    other users of the Service and your activity on the Service. You agree not to post
+    any content or make any communications which may expose WonderBill or any of the
+    Service&rsquo;s users to harm or liability of any type. You agree not to post or
+    submit User Generated Content, or a link to a website, which, is illegal, fraudulent,
+    deceptive, misleading, libellous, infringing, harassing, hateful, threatening,
+    abusive, pornographic, offensive in a sexual, racial, cultural or ethnic consent or
+    is otherwise objectionable.</p>
+
+    <p>You confirm that you own or control all rights in any User Generated Content that
+    you post or submit on or through the Service. You agree not to submit User Generated
+    Content unless you are the owner or have permission of the owner to post such User
+    Generated Content. You confirm not to post photos or videos of another person or
+    showing another person without that person&acute;s permission.</p>
+
+    <p>Your User Generated Content is not confidential or proprietary. You grant, and
+    warrant that you have the right to grant to WonderBill a non-exclusive,
+    non-revocable, worldwide, transferable, royalty-free, perpetual right to use your
+    User Generated Content in any manner of media now or later developed for any purpose,
+    commercial, advertising or otherwise, including the right to translate, display,
+    reproduce, modify, create derivative work, sub-license, distribute, assign and
+    commercialize without any payment due to you.</p>
+
+    <p>Should any part of the Service offer you the opportunity to join in or read from a
+    forum, please be aware that any communications posted on the forum represent the
+    views of the individual who posted such communication and are not to be taken as the
+    views of WonderBill.</p>
+
+    <p>Do not post any User Generated Content that includes &ldquo;junk mail&rdquo;,
+    &ldquo;chain letters&rdquo;, &ldquo;pyramid schemes&rdquo; or other forms of
+    solicitation. Do not use automated scripts to collect information from the
+    Service.</p>
+
+    <p>Do not provide any false personal information about yourself. You confirm not to
+    create more than one WonderBill account, create a WonderBill account on behalf of
+    another individual, group or entity, or transfer your profile or account. Do not use
+    or try to use another person's account, username or password.</p>
+
+    <p>WonderBill reserves the right to monitor any information transmitted or received
+    through any forum provided, and, at its sole discretion and without prior notice, to
+    review, remove or otherwise block any material posted.</p>
+
+    <p>WonderBill has no obligation to pre-screen, monitor, edit or remove User Generated
+    Content and assumes no responsibility for User Generated Content, even where it
+    chooses to carry out pre-screening, monitoring, editing or removal of User Generated
+    Content.</p>
+
+    <h3>Security</h3>
+
+    <p>If you choose or are provided with a username, password or any other piece of
+    information as part of WonderBill&rsquo;s security procedures, you must treat such
+    information as confidential and you must not disclose it to any third party nor allow
+    any unauthorized person access to the Service under your username and/or password.
+    You are responsible for any actions that take place while using your Service account
+    or while using the Service via your Device and WonderBill is not responsible for any
+    loss that results from the unauthorized use of your username and/or password, with or
+    without your knowledge.</p>
+
+    <h3>Fee Changes</h3>
+
+    <p>WonderBill, in its sole discretion and at any time, may modify or initiate
+    Subscription fees. Any Subscription fee change will become effective at the end of
+    the then-current Billing Cycle.</p>
+
+    <p>WonderBill will provide you with a reasonable prior notice of any change in or
+    initiation of Subscription fees to give you an opportunity to terminate your
+    Subscription before such change becomes effective.</p>
+
+    <p>Your continued use of the Service after the Subscription fee change comes into
+    effect constitutes your agreement to pay the modified Subscription fee amount. Except
+    when required by law, paid Subscription fees are non-refundable.</p>
+
+    <h3>Intellectual Property Rights ("IPR")</h3>
+
+    <p>All Materials and intellectual property contained in or on the Service (except for
+    User Generated Content) is owned by WonderBill or its licensors. All Materials
+    (except for User Generated Content) are a collective work under applicable copyright
+    laws and is the proprietary property of WonderBill. WonderBill reserves all of its
+    rights in respect of the Materials contained in the Service and in respect of the
+    Content.</p>
+
+    <p>All trademarks included in the Service are owned by WonderBill or its licensors.
+    WonderBill reserves all of its rights in respect of the trademarks included on this
+    Service.</p>
+
+    <p>Nothing in these Terms shall be interpreted as granting to you any license of IPR
+    owned by WonderBill or its licensors.</p>
+
+    <h3>Data Protection and Privacy Policy</h3>
+
+    <p>Personal details and other information relating to you provided to any WonderBill
+    company through this Service will be used in accordance with our <a href="/privacy"
+    target="_blank" title="Privacy Policy">Privacy Policy</a>. Please read this carefully
+    before continuing. By downloading or using the Service you are consenting to use of
+    this information in accordance with our Privacy Policy, which is incorporated into
+    these Terms by this reference.</p>
+
+    <h3>External websites and applications</h3>
+
+    <p>The Service may include links to external websites or applications. When you
+    follow such links the external website or application may appear as a full screen (in
+    which case you will need to use the Device button to return to the Service) or in
+    some cases it may appear within the frame of the Service (in which case you will be
+    able to return to the Service by using the navigation buttons within the frame of the
+    Service). These links are provided in order to help you find relevant websites,
+    applications, services and/or products which may be of interest to you quickly and
+    easily. It is your responsibility to decide whether any services and/or products
+    available through any of these websites or applications are suitable for your
+    purposes. WonderBill is not responsible for the owners or operators of these
+    applications or websites or for any goods or services they supply or for the content
+    of their websites or applications and does not give or enter into any conditions,
+    warranties or other terms or representations in relation to any of these or accept
+    any liability in relation to any of these (including any liability arising out of any
+    claim that the content of any external website or application to which the Service
+    includes a link infringes the intellectual property rights of any third party).</p>
+
+    <h3>Termination or Cancellation by WonderBill</h3>
+
+    <p>WonderBill reserves the right in its sole discretion to cancel the Service or any
+    feature thereof, and/or to terminate your account and/or access to the Service or any
+    functionalities thereof, delete your profile and any of your User Generated Content
+    and/or restrict your use of all or any part of the Service at any time, for any or no
+    reason, without notice and without liability to you or anyone else. WonderBill also
+    reserves the right to prevent access to the Service or any of its functionalities or
+    features.</p>
+
+    <p>After any line of action subject to the above Clause you are not allowed to create
+    a new account to circumvent the termination, deletion or restriction.</p>
+
+    <p>You understand and agree that some of your User Generated Content may continue to
+    appear on or through the Service or may persist in backup copies for a reasonable
+    period of time even after your account and/or access to the Service is
+    terminated.</p>
+
+    <p>These Terms remain in effect after your account and/or access to the Service is
+    terminated.</p>
+
+    <p>If you wish to terminate your account, you may simply discontinue using the
+    Service.</p>
+
+    <h3>Cancelling Your Account</h3>
+
+    <p>You are not obligated to use the Service and may cancel your account with us by
+    emailing us from your registered email address, with your instruction to close your
+    account. Upon receipt of your request we will close your account within a reasonable
+    time. Further, your account may also be closed at our sole discretion for reasons
+    including continued inactivity or suspected breach of these Terms and Conditions. In
+    the event of account closure for any reason, information contained within your
+    account will become unavailable and personally identifiable data may be deleted in
+    accordance with our internal data retention policies.</p>
+
+    <h3>Indemnification</h3>
+
+    <p>You agree to indemnify, defend and hold harmless WonderBill, its affiliates,
+    officers, directors, employees, agents, licensors, contractors, and suppliers from
+    and against all claims, losses, liabilities, expenses, loss of profits, obligations,
+    damages and costs or debt, including, without limitation, legal costs arising from or
+    relating in any way to your User Generated Content, your use of User Generated
+    Content, your use of the Service or any violation of these Terms and Conditions , any
+    law or the rights of any third party.</p>
+
+    <h3>Disclaimer and Liability</h3>
+
+    <p>You are responsible for the accuracy of the information that you enter or submit
+    into the Service. While WonderBill does its best to ensure that any information
+    provided as part of this Service is correct at the time of inclusion on the Service,
+    WonderBill cannot guarantee the accuracy of such information.</p>
+
+    <p>To the fullest extent permitted by law, WonderBill disclaims all warranties,
+    express or implied, regarding the operation and use of the Service and any products
+    accessed via the Service. You understand and agree that you use the Service at your
+    own risk and that you are solely responsible for your use and for any damage to the
+    Device through which you access the Service, loss of data or any other harm of any
+    kind which may result from downloading, accessing or using the Service. Further
+    WonderBill shall have no liability to you or others regarding the Service, including
+    damage caused by:</p>
+
+    <p>(a) inaccurate, untimely, incomplete or erroneous information;</p>
+
+    <p>(b) unavailability of the Service at any time or for any period;</p>
+
+    <p>(c) failure to log in, access the Service or stay on-line;</p>
+
+    <p>(d) events beyond our control or which could not have been reasonably foreseen;
+    or</p>
+
+    <p>(f) third party interference such as hacking, computer viruses, bugs, trojans,
+    information posted on the web by unauthorised parties, phishing, and any other cyber
+    crime.</p>
+
+    <p>To the fullest extent permitted by law, WonderBill shall under no circumstances
+    whatsoever be liable to you, whether in contract, tort (including negligence), breach
+    of statutory duty or otherwise, arising under or in connection with any products
+    accessed via the Service, your use of this Service, or for your reliance on any
+    information or advice contained in the Service for:</p>
+
+    <p>(a) loss of actual or anticipated profit, sales, savings, use, business, business
+    opportunity or revenue;</p>
+
+    <p>(b) losses caused by business interruption;</p>
+
+    <p>(c) loss of goodwill or reputation;</p>
+
+    <p>(d) loss or corruption of data, information or software; or</p>
+
+    <p>(e) any indirect, special or consequential cost, expense, loss or damage suffered
+    by you in connection with your use of the Service or any materials posted on it, even
+    if such cost, expense, loss or damage was reasonably foreseeable or might reasonably
+    have been contemplated by you and/or WonderBill.</p>
+
+    <p>Further, WonderBill shall not be liable to you or any third party in respect of
+    fraud, negligence, act, default or omission or wilful misconduct of independent
+    contractors engaged by WonderBill, or their employees, contractors or agents.</p>
+
+    <p>Nothing in these Terms shall limit or exclude WonderBill&rsquo;s liability for
+    death or personal injury caused by WonderBill's negligence or for fraud or fraudulent
+    misrepresentation.</p>
+
+    <h3>Governing Law</h3>
+
+    <p>These Terms shall be governed and construed in accordance with the laws of England
+    and Wales, without regard to its conflict of law provisions.</p>
+
+    <p>Our failure to enforce any right or provision of these Terms will not be
+    considered a waiver of those rights. If any provision of these Terms is held to be
+    invalid or unenforceable by a court, the remaining provisions of these Terms will
+    remain in effect. These Terms constitute the entire agreement between us regarding
+    our Service, and supersede and replace any prior agreements we might have had between
+    us regarding the Service.</p>
+
+    <h3>Changes to/operation of the Service</h3>
+
+    <p>WonderBill may change the format and content of all or any part of the Service at
+    any time, including but not limited to removal of features or functionalities in the
+    Service.</p>
+
+    <p>WonderBill may suspend the operation of the Service, or of certain of its features
+    or functionalities, for support or maintenance work, in order to update the content
+    or for any other reason.</p>
+
+    <p>Updates to the Service may be issued from time to time through the Appstore or
+    Google Play. Depending on the update, you may not be able to use all or part of the
+    Service until you have downloaded the latest version of the Service and accepted any
+    new terms.</p>
+
+    <h3>Changes to these Terms</h3>
+
+    <p>WonderBill may change these Terms at any time, effective upon posting the amended
+    Terms to the Service. In the event that the Terms are amended, you will be asked to
+    accept those revised Terms when you next use the Service. Any use of the Service
+    thereafter will be on the basis of those revised Terms.</p>
+
+    <h3>Transfer of Rights</h3>
+
+    <p>WonderBill may transfer its rights and obligations under these Terms to any third
+    party. Any such transfer will not affect your rights or WonderBill's obligations
+    under these Terms.</p>
+
+    <h3>Complaints procedure</h3>
+
+    <p>If you have a question or complaint about the Service, please email <a href=
+    "mailto:support@wonderbill.com" title="Email Support">support@wonderbill.com</a></p>
+
+    <h3>Severance</h3>
+
+    <p>Each of the Clauses or sub-clauses of these Terms operates separately. If any
+    court or relevant authority decides that any of them are unlawful or unenforceable,
+    the remaining Clauses or sub-clauses will remain in full force and effect.</p>
+
+    <!-- <p>See our old Terms &amp; Conditions and Privacy Policy <a href="/update.html" title=
+    "Old Ts&amp;Cs and Privacy Policy">here</a>.</p> -->
+  </div>
+</section>
+
+<section class="c-textpage c-end-page">
+
+  <section class="js-apply-bubbles" style="position: relative;">
+    <div class="js-bubble-holder"></div>
+  <section class="c-newsletter">
+  <div class="l-main-page-container">
+    
+    <h2 class="c-newsletter-heading text-centered">
+      <span class="c-newsletter-heading-icon"><img src="./images/icons/icon_newsletter_heading.png" width="73px"></span>
+      <span class="c-newsletter-heading-text">Subscribe to our newsletter</span>
+    </h2>
+    <p class="text-centered">We’ll be announcing new features and developments regularly so keep in touch</p>
+    <form class="c-newsletter-form" action="#" method="post">
+      <input class="c-newsletter-text-input" type="text" name="first-name" placeholder="First Name">
+      <input class="c-newsletter-text-input" type="text" name="last-name" placeholder="Last Name">
+      <input class="c-newsletter-text-input" type="email" name="email" placeholder="Email Address">
+      <input class="c-newsletter-submit btn btn-outline-green" type="submit" value="Submit">
+    </form>
+  </div>
+</section>
+
+
+  <footer class="c-footer">
+  <div class="c-footer-image"></div>
+  <div class="c-footer-social">
+    <a href="#" class="c-footer-social-link c-footer-social-link-facebook"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-twitter"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-instagram"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-linkedin"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-medium"></a>
+  </div>
+  <div class="c-footer-line"></div>
+  <nav class="c-footer-links hide-mobile">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Security</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </nav>
+  <nav class="c-footer-links show-mobile">
+    <ul>
+      <div class="left column">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">FAQs</a></li>
+      </div>
+      <div class="right column">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </div>
+    </ul>
+  </nav>
+  <div class="c-footer-line show-mobile"></div>
+  <div class="c-footer-text">
+    <p>40 Bank St, Canary Wharf, London, E14 5NR</p>
+    <p>Copyright WonderBill © 2017</p>
+  </div>
+</footer>
+
+  </section>
+
+</section>
+
+  <script   src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/rellax/1.4.0/rellax.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

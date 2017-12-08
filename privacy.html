@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WonderBill</title>
+
+  <!-- Sofia font from Fonts.com -->
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/8007bbd8-b9d5-4d55-a003-a6eee79db20f.css"/>
+  <link href="//fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./images/favicon.png">
+</head>
+
+<script>
+  function preLoadImages(imageURLs) {
+    document.body.classList.add('js-loading');
+    var allLoaded = false;
+    var imgCount = 0;
+    var images = [];
+    const onImageLoad = function() { imgCount += 1; }
+    const loadImage = function(url) {
+      images.push(new Image());
+      images[images.length-1].src = url
+      images[images.length-1].onload = onImageLoad;
+    }
+    const waitForLoaded = function() {
+      if (imgCount === images.length) {
+        document.body.classList.remove('js-loading'); 
+        document.body.classList.add('js-loaded'); 
+      } else {
+        setTimeout(waitForLoaded,100)
+      }
+    }
+    imageURLs.forEach(loadImage);
+    setTimeout(waitForLoaded,100);
+  }
+</script>
+
+<body class="l-main-page">
+  
+
+<script>
+ var imageURLs = [
+  ''
+ ];
+ //preLoadImages(imageURLs);
+</script>
+
+<div class="c-top-nav-mobile show-tablet show-mobile">
+  <div class="container">
+    <div class="c-top-nav-mobile-top">
+      <div class="c-top-nav-mobile-logo">
+        <a href="/"></a>
+      </div>
+      <div class="c-top-nav-mobile-close" id="js-hide-menu"></div>
+    </div>
+    <div class="c-top-nav-mobile-middle">
+      <ul>
+        <!-- <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li> -->
+        <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
+        <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
+      </ul>
+    </div>
+    <div class="c-top-nav-mobile-bottom">
+      <div class="c-top-nav-mobile-social">
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-facebook"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-twitter"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-instagram"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-linkedin"></a>
+        <a href="#" class="c-top-nav-mobile-social-link c-top-nav-mobile-social-link-medium"></a>
+      </div>
+      <div class="c-top-nav-mobile-line"></div>
+      <div class="c-top-nav-mobile-text">
+        <p>40 Bank St, Canary Wharf, London, E14 5NR</p>
+        <p>Copyright WonderBill © 2017</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="c-textpage-header c-blue-header c-blue-header-bg-blue">
+  <div class="c-top-nav-white">
+  <div class="c-top-nav-container">
+    <nav class="c-top-nav">
+      <div class="c-top-nav-logo">
+        <a href="/"></a>
+      </div>
+      <ul class="c-top-nav-links hide-tablet hide-mobile">
+        <!-- <li><a class="c-top-nav-links-no-btn" href="#">Features</a></li> -->
+        <li><a href="#" class="btn btn-outline-green btn-inline">Log in</a></li>
+        <li><a href="#" class="btn btn-green btn-inline">Sign up</a></li>
+      </ul>
+      <div class="c-top-nav-burger show-tablet show-mobile" id="js-show-menu"></div>
+    </nav>
+  </div>
+</div>
+
+  <div class="l-main-page-container">
+    <div class="c-blue-header-title">
+      <h2>Privacy Policy</h2>
+    </div>
+  </div>
+</section>
+
+<section class="c-textpage-content">
+  <div class="l-main-page-container">
+  
+    <h3>WonderBill Privacy Policy (“Privacy”)</h3>
+
+    <p>We respect the privacy of everyone who uses the 
+    WonderBill
+     service, visits the 
+    WonderBill website
+    or uses the WonderBill
+     Application. As a result we would like to inform you
+    regarding the way we would use your personal data. We recommend you read this privacy
+    policy so that you understand our approach towards the use of your personal data.
+    </p>
+
+    <h3>What does this privacy policy cover?</h3>
+
+    <p>This privacy policy is to inform you regarding the use of
+    your personal information which is collected during your visit to the 
+    WonderBill
+     website or application and through your use of the 
+    WonderBill
+     services.</p>
+
+    <h3>Special Notice - if you are under 13 years old</h3>
+
+    <p>Our website is not aimed at children under 13 years old and we will not collect,
+    use, provide or process in any other form any personal information of children under
+    the age of 13 deliberately.</p>
+
+    <p>We therefore also ask you, if you are under 13 years old, please do not to send us
+    your personal information (for example, your name, address and email address). If you
+    are under 13 years old and you nevertheless wish to ask a question or use this
+    website in anyway which requires you to submit your personal information please get
+    your parent or guardian to do so on your behalf.</p>
+
+    <h3>What personal data do we process?</h3>
+
+    <p>We collect information, including personal data about you,
+    as a WonderBill
+     user and/or visitor to a 
+    WonderBill website.
+    This information may be either:</p>
+
+    <ul>
+      <li>Information that you provide to us &ndash; when creating
+      your WonderBill
+       account profile, we will ask for your name, e-mail address,
+      telephone number (optional) and your contact preferences. Depending on your use of
+      the WonderBill
+       services we will collect and store information contained in
+      your utility bills and other bills that you decide to upload to your 
+      WonderBill
+       profile.</li>
+
+      <li>Information that we obtain through your use of 
+      WonderBill
+       services - we will collect information about how and where
+      you use WonderBill
+       services as well as aggregated information about you such
+      as your age group or residence. Such information may include electronic device
+      information, IP addresses, the website from which you linked to our website, log
+      information, browser type and preferences, location information (with your
+      consent), online identifiers to enable &lsquo;cookies&rsquo; and similar
+      technologies.</li>
+    </ul>
+
+    <h3>What are the legal bases for processing the personal data?</h3>
+
+    <p>The personal data covered by this Privacy Policy is only processed:</p>
+
+    <ul>
+      <li>with your explicit consent; or</li>
+
+      <li>where it is necessary to conclude a transaction with you (such as payment
+      information); or</li>
+
+      <li>where it is necessary for 
+      WonderBill to
+      comply with a legal obligation or where the processing activity is necessary for
+      the purposes of the legitimate interests of 
+      WonderBill (for
+      example, fraud prevention).</li>
+    </ul>
+
+    <p>Where the processing is based on consent, you have the right to withdraw your
+    consent at any time. This will not affect the validity of the processing prior to the
+    withdrawal of consent.</p>
+
+    <h3>Who is responsible for any personal data collected?</h3>
+
+    <p>WonderBill
+    Limited with registered number 10515447 whose registered office is at Shell Centre,
+    London, England, SE1 7NA, UK, is the controller for the processing of your personal
+    data.</p>
+
+    <h3>For what purposes do we process your personal data?</h3>
+
+    <p>We collect and use your personal information to better provide you with the
+    required services, or information. We would therefore use your personal information
+    for the purposes of:</p>
+
+    <ul>
+      <li>maintaining and promoting contact and relationship with you;</li>
+
+      <li>account management including account verification (that is, ensuring that only
+      you or someone you have authorised can access your account and information);</li>
+
+      <li>customer service and development;</li>
+
+      <li>performance of and analysis of market surveys and marketing strategies;</li>
+
+      <li>promotions and contests;</li>
+
+      <li>detecting or preventing fraud;</li>
+    </ul>
+
+    <h3>Communication and marketing</h3>
+
+    <p>If you have consented to receive offers from 
+    WonderBill
+    , you may receive offers that are tailored towards your
+    personal preferences based on analysing your use of 
+    WonderBill
+    services, your purchase history, your participation in promotions, surveys and other
+    digital channels.</p>
+
+    <p>You may receive your offers by different communication
+    channels, such as email, SMS, through the 
+    WonderBill
+    portal, App (through push notifications), social media or any other digital channels
+    used by you. You may adjust the communication preferences by contacting us at 
+    <a href="myinfo@wonderbill.com" target="_blank" title=
+    "Email Information">myinfo@wonderbill.com</a> or 
+    <a href="mailto:support@wonderbill.com" title=
+    "Email Support">support@wonderbill.com</a> as well as through
+    the use the unsubscribe functionality or communication preferences for the different
+    digital channels, if available.</p>
+
+    <p>Even if you have not consented to receive offers we may
+    send you service updates and notifications that are necessary for the proper
+    functioning of the WonderBill
+     services that you use (like
+    notifications that a new utilities bill has been uploaded).</p>
+
+    <h3>Interaction between you and us</h3>
+
+    <p>We are interested in your views, and we value feedback from our clients and
+    visitors, we therefore have set up notice boards, newsgroups, feedback, email, forum
+    facilities and/ or chat rooms. If at any time this website offers any chat rooms,
+    notice board facilities, newsgroups etc. we may collect the personal information that
+    you disclose in accordance with this Privacy Policy.</p>
+
+    <h3>If you communicate with us through social media</h3>
+
+    <p>If you choose to interact with 
+    WonderBill
+    through social media such as LinkedIn, Facebook and/or Twitter, your personal data
+    (such as your name and the fact that you are interested in 
+    WonderBill) may
+    also be visible to the visitors of your personal webpage on LinkedIn, Facebook and/or
+    Twitter, according to your privacy settings on the social media services. 
+    WonderBill
+     is not responsible for the processing of personal data or
+    the privacy policy of such social media websites.</p>
+
+    <p>When you communicate with us through our Facebook page (for example, when you post
+    a comment, upload media, send a personal message or become a fan of us by clicking
+    the "Like" button, we may receive personal data about you (such as your (user) name,
+    profile photo, your residency, your email address and your gender). We will process
+    such information in accordance with this Privacy Policy.</p>
+
+    <h3>My data</h3>
+
+    <p>We aim to keep our information as accurate as possible.
+    You can access your personal data, request correction or deletion of the personal
+    data (but only where it is no longer required for a legitimate business purpose such
+    as completing a transaction) and request that the processing of the personal data is
+    restricted. Please send your request via email to <a href=
+    "mailto:support@wonderbill.com" title="Email Support">support@wonderbill.com</a>
+    .</p>
+
+    <p>If you have any issues, queries or complaints regarding
+    the processing of your personal data, please contact us at 
+    <a href="mailto:support@wonderbill.com" title=
+    "Email Support">support@wonderbill.com</a> for further
+    information or for submitting such requests. You also have the right to lodge a
+    complaint with the supervisory data protection authority. We will provide you with
+    these details and that of the local data protection officer (if applicable)
+    immediately on request by contacting <a href=
+    "mailto:support@wonderbill.com" title="Email Support">support@wonderbill.com</a></p>
+
+    <h3>Who will you share my personal data with?</h3>
+
+    <p>Your personal data is exclusively processed for the purposes referred to above and
+    will only be shared on a strict need to know basis with:</p>
+
+    <ul>
+      <li>Service providers involved in price comparison services
+      or other authorised service providers involved in 
+      WonderBill
+      operations that remain under control of 
+      WonderBill;
+      </li>
+
+      <li>with your consent, authorised third party companies in
+      co-operation with WonderBill
+       such as utilities providers;
+      </li>
+
+      <li>A competent public authority, government, regulatory or
+      fiscal agency where it is necessary to comply with a legal or regulatory obligation
+      to which WonderBill
+       is subject to or as permitted by applicable local law;
+      </li>
+
+      <li>Any person to whom 
+      WonderBill
+      proposes to transfer any of its rights and/or duties</li>
+    </ul>
+
+    <h3>Transfers of personal data</h3>
+
+    <p>Where your personal data has been transferred to
+    authorised third parties located outside of your country (including outside of the
+    European Economic Area) we take organisational, contractual and legal measures to
+    ensure that your personal data is exclusively processed for the purposes mentioned
+    above and that adequate levels of protection have been implemented to safeguard your
+    personal data. These measures include Binding Corporate Rules, the European
+    Commission approved transfer mechanisms for transfers to third parties in countries
+    which have not been deemed to provide an adequate level of data protection as well as
+    any additional local legal requirements. You can request further information in this
+    respect by contacting <a href="mailto:support@wonderbill.com"
+    title="Email Support">support@wonderbill.com</a></p>
+
+    <p>Except as set out in this privacy policy, we will not disclose any personally
+    identifiable information without your permission unless we are legally entitled or
+    required to do so (for example, if required to do so by legal process or for the
+    purposes of prevention of fraud or other crime) or if we believe that such action is
+    necessary to protect and/or defend our rights, property or personal safety and those
+    of our users/customers or other individuals.</p>
+
+    <h3>Security of your personal information</h3>
+
+    <p>We have implemented technology and policies with the
+    objective of protecting your privacy from unauthorised access and improper use. In
+    particular, we may use encryption for some of our services, we apply authentication
+    and verification process for access to 
+    WonderBill
+    services and we will update these measures as new technology becomes available.
+    </p>
+
+    <h3>How long we retain your data</h3>
+
+    <p>Personal data provided to 
+    WonderBill in
+    line with this Privacy Policy will be deleted or rendered anonymous (such that it
+    will no longer be possible to identify you) without undue delay after your request
+    that your WonderBill
+     account profile is deleted and/or if you discontinue using
+    the WonderBill
+     services.</p>
+
+    <p>The only exceptions are when your personal data processed as part of a financial
+    transaction or when it is required for the detection or prevention of fraud.</p>
+
+    <h3>Changes to this Privacy Policy</h3>
+
+    <p>This Privacy Policy may be changed over time. You are advised to regularly review
+    the Privacy Policy for possible changes but if the changes are significant, we will
+    provide you with an appropriate notice, including e-mail notification if necessary.
+    This Privacy Policy was last updated on 26 July 2017.</p>
+
+    <h3>Cookies policy</h3>
+
+    <p>We use the term &ldquo;cookies&rdquo; to refer to cookies and other similar
+    technologies covered by the EU Directive on privacy in electronic communications.</p>
+
+    <h3>What is a cookie?</h3>
+
+    <p>Cookies are small data files that your browser places on your computer or device.
+    Cookies help your browser navigate a website and the cookies themselves cannot
+    collect any information stored on your computer or your files.</p>
+
+    <p>When a server uses a web browser to read cookies they can help a website deliver a
+    more user-friendly service. To protect your privacy, your browser only gives a
+    website access to the cookies it has already sent to you.</p>
+
+    <h3>Why do we use cookies?</h3>
+
+    <p>We use cookies to learn more about the way you interact with our content and help
+    us to improve your experience when visiting our website.</p>
+
+    <p>Cookies remember the type of browser you use and which additional browser software
+    you have installed. They also remember your preferences, such as language and region,
+    which remain as your default settings when you revisit the website. Cookies also
+    allow you to rate pages and fill in comment forms.</p>
+
+    <p>Some of the cookies we use are session cookies and only last until you close your
+    browser, others are persistent cookies which are stored on your computer for
+    longer.</p>
+
+    <h3>How are third party cookies used?</h3>
+
+    <p>For some of the functions within our websites we use third party suppliers, for
+    example, when you visit a page with videos embedded from or links to YouTube. These
+    videos or links (and any other content from third party suppliers) may contain third
+    party cookies and you may wish to consult the policies of these third party websites
+    for information regarding their use of cookies.</p>
+
+    <h3>How do I reject and delete cookies?</h3>
+
+    <p>We will not use cookies to collect personally identifiable
+    information about you. However, should you wish to do so, you can choose to reject or
+    block the cookies set by WonderBill
+     or the websites of any third party
+    suppliers by changing your browser settings &ndash; see the Help function within your
+    browser for further details. Please note that most browsers automatically accept
+    cookies so if you do not wish cookies to be used you may need to actively delete or
+    block the cookies.</p>
+
+    <p>You can also visit <a href=
+    "www.allaboutcookies.org" target="_blank" title=
+    "All About Cookies">www.allaboutcookies.org</a> for details
+    on how to delete or reject cookies and for further information on cookies generally.
+    For information on the use of cookies in mobile phone browsers and for details on how
+    to reject or delete such cookies, please refer to your handset manual.
+    </p>
+
+    <p>Note, however, that if you reject the use of cookies you will still be able to
+    visit our websites but some of the functions may not work correctly.</p>
+
+    <h3>More queries - How can you contact us?</h3>
+
+    <p>Please contact <a href=
+    "mailto:support@wonderbill.com" title="Email Support">support@wonderbill.com</a>
+     if you would like to know more about our privacy policy.
+    </p>
+
+    <p>See our old Terms &amp; Conditions and Privacy Policy 
+    <a href="/update" title=
+    "Old Ts&amp;Cs and Privacy Policy">here</a>.
+    </p>    
+
+  </div>
+</section>
+
+<section class="c-textpage c-end-page">
+
+  <section class="js-apply-bubbles" style="position: relative;">
+    <div class="js-bubble-holder"></div>
+  <section class="c-newsletter">
+  <div class="l-main-page-container">
+    
+    <h2 class="c-newsletter-heading text-centered">
+      <span class="c-newsletter-heading-icon"><img src="./images/icons/icon_newsletter_heading.png" width="73px"></span>
+      <span class="c-newsletter-heading-text">Subscribe to our newsletter</span>
+    </h2>
+    <p class="text-centered">We’ll be announcing new features and developments regularly so keep in touch</p>
+    <form class="c-newsletter-form" action="#" method="post">
+      <input class="c-newsletter-text-input" type="text" name="first-name" placeholder="First Name">
+      <input class="c-newsletter-text-input" type="text" name="last-name" placeholder="Last Name">
+      <input class="c-newsletter-text-input" type="email" name="email" placeholder="Email Address">
+      <input class="c-newsletter-submit btn btn-outline-green" type="submit" value="Submit">
+    </form>
+  </div>
+</section>
+
+
+  <footer class="c-footer">
+  <div class="c-footer-image"></div>
+  <div class="c-footer-social">
+    <a href="#" class="c-footer-social-link c-footer-social-link-facebook"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-twitter"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-instagram"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-linkedin"></a>
+    <a href="#" class="c-footer-social-link c-footer-social-link-medium"></a>
+  </div>
+  <div class="c-footer-line"></div>
+  <nav class="c-footer-links hide-mobile">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Security</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+    </ul>
+  </nav>
+  <nav class="c-footer-links show-mobile">
+    <ul>
+      <div class="left column">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">FAQs</a></li>
+      </div>
+      <div class="right column">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+      </div>
+    </ul>
+  </nav>
+  <div class="c-footer-line show-mobile"></div>
+  <div class="c-footer-text">
+    <p>40 Bank St, Canary Wharf, London, E14 5NR</p>
+    <p>Copyright WonderBill © 2017</p>
+  </div>
+</footer>
+
+  </section>
+
+</section>
+
+  <script   src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/rellax/1.4.0/rellax.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>

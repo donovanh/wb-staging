@@ -369,6 +369,10 @@ li {
   height: 248px; }
   .c-blue-header-title {
     padding-top: 2.75rem; }
+  .c-blue-header-bg-blue {
+    background: linear-gradient(to bottom, #0D2D57 248px, transparent 248px, transparent 100%), url(./images/backgrounds/textpage-header-bg.png) no-repeat bottom;
+    background-size: auto, 100%;
+    height: 1247px; }
 
 .btn {
   background-position: top;
@@ -2026,6 +2030,26 @@ li {
   background-size: 100% 94%;
   min-height: 0; }
 
+.c-textpage-content {
+  margin: -980px auto 0;
+  max-width: 820px; }
+  .c-textpage-content h3 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin-top: 2em; }
+  .c-textpage-content p {
+    font-size: 16px;
+    opacity: .66; }
+  .c-textpage-content li {
+    line-height: 1.5;
+    opacity: .66; }
+  .c-textpage-content ul {
+    margin-bottom: 2rem; }
+
+.c-textpage.c-end-page {
+  margin-top: -80rem;
+  padding-top: 80rem; }
+
 .c-top-nav {
   position: relative;
   padding: 0; }
@@ -2294,6 +2318,10 @@ li {
       height: 153px; }
       .c-blue-header-title {
         padding-top: 1.5rem; }
+      .c-blue-header-bg-blue {
+        background: linear-gradient(to bottom, #0D2D57 153px, transparent 153px, transparent 100%), url(./images/backgrounds/textpage-header-bg.png) no-repeat bottom;
+        background-size: auto, 100%;
+        height: 500px; }
     .c-careers-header {
       min-height: 0;
       height: 40rem; }
@@ -2550,6 +2578,8 @@ li {
           top: 28px; }
     .c-security-callout {
       margin-bottom: 4rem; }
+    .c-textpage-content {
+      margin-top: -340px; }
       .c-top-nav-white {
         height: 71px;
         padding-bottom: 16px;
