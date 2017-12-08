@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>WonderBill</title>
-
+  <meta name="description" content="text">
+  <meta name="keywords" content="text">
   <!-- Sofia font from Fonts.com -->
   <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/8007bbd8-b9d5-4d55-a003-a6eee79db20f.css"/>
   <link href="//fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet">
@@ -24,32 +25,33 @@
   <link rel="icon" type="image/png" href="./images/favicons/favicon-32x32.png" sizes="32x32"/>
   <link rel="icon" type="image/png" href="./images/favicons/favicon-96x96.png" sizes="96x96"/>
   <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg"/>
-</head>
 
-<script>
-  function preLoadImages(imageURLs) {
-    document.body.classList.add('js-loading');
-    var allLoaded = false;
-    var imgCount = 0;
-    var images = [];
-    const onImageLoad = function() { imgCount += 1; }
-    const loadImage = function(url) {
-      images.push(new Image());
-      images[images.length-1].src = url
-      images[images.length-1].onload = onImageLoad;
-    }
-    const waitForLoaded = function() {
-      if (imgCount === images.length) {
-        document.body.classList.remove('js-loading'); 
-        document.body.classList.add('js-loaded'); 
-      } else {
-        setTimeout(waitForLoaded,100)
+  <script>
+    function preLoadImages(imageURLs) {
+      document.body.classList.add('js-loading');
+      var allLoaded = false;
+      var imgCount = 0;
+      var images = [];
+      const onImageLoad = function() { imgCount += 1; }
+      const loadImage = function(url) {
+        images.push(new Image());
+        images[images.length-1].src = url
+        images[images.length-1].onload = onImageLoad;
       }
+      const waitForLoaded = function() {
+        if (imgCount === images.length) {
+          document.body.classList.remove('js-loading'); 
+          document.body.classList.add('js-loaded'); 
+        } else {
+          setTimeout(waitForLoaded,100)
+        }
+      }
+      imageURLs.forEach(loadImage);
+      setTimeout(waitForLoaded,100);
     }
-    imageURLs.forEach(loadImage);
-    setTimeout(waitForLoaded,100);
-  }
-</script>
+  </script>
+
+</head>
 
 <body class="@@bodyClass">
   

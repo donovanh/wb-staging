@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>WonderBill</title>
-
+  <meta name="description" content="text">
+  <meta name="keywords" content="text">
   <!-- Sofia font from Fonts.com -->
   <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/8007bbd8-b9d5-4d55-a003-a6eee79db20f.css"/>
   <link href="//fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet">
@@ -24,32 +25,33 @@
   <link rel="icon" type="image/png" href="./images/favicons/favicon-32x32.png" sizes="32x32"/>
   <link rel="icon" type="image/png" href="./images/favicons/favicon-96x96.png" sizes="96x96"/>
   <link rel="mask-icon" href="./images/favicons/safari-pinned-tab.svg"/>
-</head>
 
-<script>
-  function preLoadImages(imageURLs) {
-    document.body.classList.add('js-loading');
-    var allLoaded = false;
-    var imgCount = 0;
-    var images = [];
-    const onImageLoad = function() { imgCount += 1; }
-    const loadImage = function(url) {
-      images.push(new Image());
-      images[images.length-1].src = url
-      images[images.length-1].onload = onImageLoad;
-    }
-    const waitForLoaded = function() {
-      if (imgCount === images.length) {
-        document.body.classList.remove('js-loading'); 
-        document.body.classList.add('js-loaded'); 
-      } else {
-        setTimeout(waitForLoaded,100)
+  <script>
+    function preLoadImages(imageURLs) {
+      document.body.classList.add('js-loading');
+      var allLoaded = false;
+      var imgCount = 0;
+      var images = [];
+      const onImageLoad = function() { imgCount += 1; }
+      const loadImage = function(url) {
+        images.push(new Image());
+        images[images.length-1].src = url
+        images[images.length-1].onload = onImageLoad;
       }
+      const waitForLoaded = function() {
+        if (imgCount === images.length) {
+          document.body.classList.remove('js-loading'); 
+          document.body.classList.add('js-loaded'); 
+        } else {
+          setTimeout(waitForLoaded,100)
+        }
+      }
+      imageURLs.forEach(loadImage);
+      setTimeout(waitForLoaded,100);
     }
-    imageURLs.forEach(loadImage);
-    setTimeout(waitForLoaded,100);
-  }
-</script>
+  </script>
+
+</head>
 
 <body class="l-main-page styleguide">
   
@@ -121,7 +123,7 @@
       <h1>All of your bills in one place</h1>
       <p>WonderBill is the easy way to manage your household bills, track your outgoing payments and find great provider deals for your gas, electricity, mobile, tv, landline and broadband.</p>
       <p class="c-home-hero-left-actions">
-        <a href="#"><img src="./images/app-store-1.png" width="139"></a>
+        <a href="https://itunes.apple.com/gb/app/wonderbill/id1217837332"><img src="./images/app-store-1.png" width="139"></a>
         <a href="#"><img src="./images/app-store-2.png" width="133"></a>
       </p>
     </div>
@@ -293,7 +295,7 @@
         </div>
       </div>
       
-      <p class="text-centered"><a href="#" class="btn btn-orange">Read more</a></p>
+      <p class="text-centered"><a href="security.html" class="btn btn-orange">Read more</a></p>
     </div>
   </section>
 
@@ -329,7 +331,7 @@
         </div>
       </div>
       
-      <p class="text-centered"><a href="#" class="btn btn-turqoise">Read more</a></p>
+      <p class="text-centered"><a href="faq.html" class="btn btn-turqoise">Read more</a></p>
     </div>
   </section>
 
@@ -356,36 +358,36 @@
   <footer class="c-footer">
   <div class="c-footer-image"></div>
   <div class="c-footer-social">
-    <a href="#" class="c-footer-social-link c-footer-social-link-facebook"></a>
-    <a href="#" class="c-footer-social-link c-footer-social-link-twitter"></a>
-    <a href="#" class="c-footer-social-link c-footer-social-link-instagram"></a>
-    <a href="#" class="c-footer-social-link c-footer-social-link-linkedin"></a>
-    <a href="#" class="c-footer-social-link c-footer-social-link-medium"></a>
+    <a href="https://www.facebook.com/wonderbill" class="c-footer-social-link c-footer-social-link-facebook"></a>
+    <a href="https://twitter.com/wonderbill" class="c-footer-social-link c-footer-social-link-twitter"></a>
+    <a href="https://www.instagram.com/wonderbill1841/" class="c-footer-social-link c-footer-social-link-instagram"></a>
+    <a href="https://www.linkedin.com/company/10964716/" class="c-footer-social-link c-footer-social-link-linkedin"></a>
+    <a href="https://medium.com/@WonderBill" class="c-footer-social-link c-footer-social-link-medium"></a>
   </div>
   <div class="c-footer-line"></div>
   <nav class="c-footer-links hide-mobile">
     <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Jobs</a></li>
-      <li><a href="#">Security</a></li>
-      <li><a href="#">FAQs</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Terms</a></li>
-      <li><a href="#">Privacy</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="careers.html">Jobs</a></li>
+      <li><a href="security.html">Security</a></li>
+      <li><a href="faq.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
     </ul>
   </nav>
   <nav class="c-footer-links show-mobile">
     <ul>
       <div class="left column">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Security</a></li>
-        <li><a href="#">FAQs</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="careers.html">Jobs</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="faq.html">FAQs</a></li>
       </div>
       <div class="right column">
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
+        <li><a href="cpntact.html">Contact</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
       </div>
     </ul>
   </nav>
