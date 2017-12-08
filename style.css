@@ -827,6 +827,7 @@ li {
     background-color: #FAFBFC;
     border-top: 4px solid #F3F3F3; }
     .c-faq-item.is-active .answer {
+      border-top: 2px solid #F3F3F3;
       -webkit-transform: none;
               transform: none;
       padding: 1rem 4rem 1rem 1rem;
