@@ -1,7 +1,85 @@
-@@include('./partials/head.html', {
-  "bodyClass": "l-main-page",
-  "title": "Contact Us",
-  "description": "Get in touch with us with feedback or suggestions"
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WonderBill - Contact Us</title>
+  <meta name="description" content="Get in touch with us with feedback or suggestions">
+  
+  <!-- Sofia font from Fonts.com -->
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/8007bbd8-b9d5-4d55-a003-a6eee79db20f.css"/>
+  <link href="//fonts.googleapis.com/css?family=Hind:400,500,600" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+  <link rel="stylesheet" href="./style.css?v=1">
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./images/favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./images/favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="./images/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="./images/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="./images/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./images/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="./images/favicons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Wonderbill"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="./images/favicons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="./images/favicons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="./images/favicons/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="./images/favicons/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="./images/favicons/mstile-310x310.png" />
+
+  
+  <script>
+    !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window,document,'script', ' https://connect.facebook.net/en_US/fbevents.js' );
+    fbq('init', '631037897067426');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" src=" https://www.facebook.com/tr?id=631037897067426&ev=PageView &noscript=1"/>
+  </noscript>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85207353-1"></script> <script>
+    window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'UA-85207353-1');
+  </script>
+
+  <script>
+    function preLoadImages(imageURLs) {
+      document.body.classList.add('js-loading');
+      var allLoaded = false;
+      var imgCount = 0;
+      var images = [];
+      const onImageLoad = function() { imgCount += 1; }
+      const loadImage = function(url) {
+        images.push(new Image());
+        images[images.length-1].src = url
+        images[images.length-1].onload = onImageLoad;
+      }
+      const waitForLoaded = function() {
+        if (imgCount === images.length) {
+          document.body.classList.remove('js-loading'); 
+          document.body.classList.add('js-loaded'); 
+        } else {
+          setTimeout(waitForLoaded,100)
+        }
+      }
+      imageURLs.forEach(loadImage);
+      setTimeout(waitForLoaded,100);
+    }
+  </script>
+
+</head>
+
+<body class="l-main-page">
+  
 
 <script>
  var imageURLs = [
